@@ -67,6 +67,5 @@ $$
 &= \sum_a \pi(a|s) \sum_{s'} p(s'|s,a) \cdot v_{\pi}(s')
 \\
 &= \sum_a \pi(a|s) \sum_{s'} \sum_r p(s',r|s,a) \cdot v_{\pi}(s')
-\\
 \end{align}
 $$
