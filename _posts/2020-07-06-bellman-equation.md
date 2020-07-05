@@ -1,3 +1,7 @@
+---
+show_edit_on_github: false
+---
+
 The state-value function is defined as follows.
 
 $$ v_{\pi}(s) \doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right] \notag $$
