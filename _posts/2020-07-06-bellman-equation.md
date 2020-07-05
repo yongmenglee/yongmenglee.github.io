@@ -28,7 +28,7 @@ v_{\pi}(s) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right]
 \\
 &= \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_t = s \right]
 \\
-&= \mathbb{E}_{\pi} \left[ R_{t+1} | S_t = s \right] + \mathbb{E}_{\pi} \left[ \gamma G_{t+1} | S_t = s \right]
+&= \mathbb{E}_{\pi} \left[ R_{t+1} | S_t = s \right] + \gamma \mathbb{E}_{\pi} \left[ G_{t+1} | S_t = s \right]
 \end{align}
 $$
 
@@ -80,6 +80,6 @@ v_{\pi}(s) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right]
 &= \sum_a \pi(a|s) \sum_{s'} \sum_r \cdot p(s',r|a,s) \cdot r
 + \sum_a \pi(a|s) \sum_{s'} \sum_r p(s',r|s,a) \cdot v_{\pi}(s')
 \\
-&= \sum_a \pi(a|s) \sum_{s'} \sum_r \cdot p(s',r|a,s) \left[ r + v_{\pi}(s') \right]
+&= \sum_a \pi(a|s) \sum_{s'} \sum_r \cdot p(s',r|a,s) \left[ r + \gamma v_{\pi}(s') \right]
 \end{align}
 $$
