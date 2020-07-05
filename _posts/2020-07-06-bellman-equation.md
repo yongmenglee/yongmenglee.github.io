@@ -14,7 +14,7 @@ $$
 
 Recall that $G_t$ is the sum of future rewards, i.e.
 $$
-G_t = \sum_{k=0}^{\infty} \gamma^k R{k+t+1}
+G_t = \sum_{k=0}^{\infty} \gamma^k R_{k+t+1}
 $$
 
 where $\gamma$ is the discounted value and $R_n$ is the reward at state $n$.
@@ -22,11 +22,11 @@ where $\gamma$ is the discounted value and $R_n$ is the reward at state $n$.
 Therefore, 
 
 $$
-begin{align}
+\begin{align}
 v_{\pi}(s) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right]
 \\
 &= \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_t = s \right]
 \\
 &= \mathbb{E}_{\pi} \left[ R_{t+1} \right] + \mathbb{E}_{\pi} \left[ \gamma G_{t+1} | S_t = s \right]
-end{align}
+\end{align}
 $$
