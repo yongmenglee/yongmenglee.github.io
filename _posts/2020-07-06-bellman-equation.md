@@ -43,9 +43,9 @@ $$
 \\
 &= \sum_a \sum_r p(a,r|s) \cdot r
 \\
-&= \sum_a \sum_r \pi(a|s) \cdot p(r|a,s) \cdot r
+&= \sum_a \sum_r \pi(a|s) \cdot p(r|s,a) \cdot r
 \\
-&= \sum_a \pi(a|s) \sum_{s'} \sum_r \cdot p(s',r|a,s) \cdot r
+&= \sum_a \pi(a|s) \sum_{s'} \sum_r \cdot p(s',r|s,a) \cdot r
 \end{align}
 $$
 
@@ -67,5 +67,19 @@ $$
 &= \sum_a \pi(a|s) \sum_{s'} p(s'|s,a) \cdot v_{\pi}(s')
 \\
 &= \sum_a \pi(a|s) \sum_{s'} \sum_r p(s',r|s,a) \cdot v_{\pi}(s')
+\end{align}
+$$
+
+Now, we merge the two parts on the right hand side back to the state-value function.
+
+$$
+\begin{align}
+
+v_{\pi}(s) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right]
+\\
+&= \sum_a \pi(a|s) \sum_{s'} \sum_r \cdot p(s',r|a,s) \cdot r
++ \sum_a \pi(a|s) \sum_{s'} \sum_r p(s',r|s,a) \cdot v_{\pi}(s')
+\\
+&= \sum_a \pi(a|s) \sum_{s'} \sum_r \cdot p(s',r|a,s) \left[ r + v_{\pi}(s') \right]
 \end{align}
 $$
