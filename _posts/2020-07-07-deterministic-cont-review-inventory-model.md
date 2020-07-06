@@ -39,14 +39,14 @@ T = \left( K + cQ + \frac{hQ^2}{2d} \right) \times \frac{1}{Q/d}
 = \frac{dK}{Q} + cd + \frac{hQ}{2}
 $$
 
-We denote by $Q*$, the value of $Q$ that minimizes $T$ as follows:
+We denote by $Q^*$, the value of $Q$ that minimizes $T$ as follows:
 
 $$
 Q* = \sqrt{\frac{2dK}{h}}
 $$
 
 
-### $Q*$: The Derivation
+### $Q^*$: The Derivation
 
 Given that
 
@@ -61,11 +61,11 @@ $$
 \frac{dT}{dQ} = -\frac{dK}{Q^2} + \frac{h}{2}
 $$
 
-To find $Q$ that minimizes $T$, we want to find the value of $Q*$ so that $\frac{dT}{dQ} = 0$. Hence,
+To find $Q$ that minimizes $T$, we want to find the value of $Q^*$ so that $\frac{dT}{dQ} = 0$. Hence,
 
 $$
 \begin{align}
--\frac{dK}{(Q*)^2} + \frac{h}{2} &= 0
+-\frac{dK}{(Q^*)^2} + \frac{h}{2} &= 0
 \\
 (Q*)^2 &= \frac{2dK}{h} \notag
 \\
@@ -73,8 +73,26 @@ Q* &= \sqrt{\frac{2dK}{h} \notag}
 \end{align}
 $$
 
-The variable $Q*$ answers the following question:
+The value of $Q^*$ answers the following question:
 
 > How many products to produce in each batch of order?
 
-### $T*$: The Derivation
+Next, we will look at the derivation of $T^*$.
+
+### $t^*$: The Derivation
+
+From earlier section, we know that the cycle length is $t = \frac{Q}{d}$, therefore
+
+$$
+t^* = \frac{Q^*}{d} = \sqrt{\frac{2K}{dh}}
+$$
+
+The value of $t^*$ answers the following question:
+
+> When to make the order?
+
+The formula of both $Q^*$ and $t^*$ enables us to calculate the optimal unit of product to order at an optimal time. However, this is only the special case where **planned shortage is not allowed**.
+
+So, what will happen if we change the assumption: to allow planned shortage?
+
+## EOQ Model: With Planned Shortages
