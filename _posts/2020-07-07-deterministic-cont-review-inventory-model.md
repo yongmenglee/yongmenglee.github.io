@@ -4,7 +4,11 @@ tag: formula
 show_edit_on_github: false
 ---
 
-## EOQ (Economic Order Quantity) Model: No Planned Shortages
+In this article, we will define the formula for EOQ (Economic Order uantity) Model with and without planned shorted, and perform the derivation to the formula.
+
+<!--more-->
+
+## EOQ Model: No Planned Shortages
 
 Given that
 
@@ -28,7 +32,7 @@ $$
 
 Then, the total cost per cycle is, $K + cQ + \frac{hQ^2}{2d}$, in \$.
 
-We denote by $T$, the total cost (in $) per unit time, as follows:
+We denote by $T$, the total cost (in \$) per unit time, as follows:
 
 $$
 T = \left( K + cQ + \frac{hQ^2}{2d} \right) \times \frac{1}{Q/d}
