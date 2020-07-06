@@ -39,3 +39,42 @@ T = \left( K + cQ + \frac{hQ^2}{2d} \right) \times \frac{1}{Q/d}
 = \frac{dK}{Q} + cd + \frac{hQ}{2}
 $$
 
+We denote by $Q*$, the value of $Q$ that minimizes $T$ as follows:
+
+$$
+Q* = \sqrt{\frac{2dK}{h}}
+$$
+
+
+### $Q*$: The Derivation
+
+Given that
+
+$$
+T = T = \left( K + cQ + \frac{hQ^2}{2d} \right) \times \frac{1}{Q/d}
+= \frac{dK}{Q} + cd + \frac{hQ}{2} \notag
+$$
+
+we differentiate $T$ with respect to $Q$ as follows:
+
+$$
+\frac{dT}{dQ} = -\frac{dK}{Q^2} + \frac{h}{2}
+$$
+
+To find $Q$ that minimizes $T$, we want to find the value of $Q*$ so that $\frac{dT}{dQ} = 0$. Hence,
+
+$$
+\begin{align}
+-\frac{dK}{(Q*)^2} + \frac{h}{2} &= 0
+\\
+(Q*)^2 &= \frac{2dK}{h} \notag
+\\
+Q* &= \sqrt{\frac{2dK}{h} \notag}
+\end{align}
+$$
+
+The variable $Q*$ answers the following question:
+
+> How many products to produce in each batch of order?
+
+### $T*$: The Derivation
