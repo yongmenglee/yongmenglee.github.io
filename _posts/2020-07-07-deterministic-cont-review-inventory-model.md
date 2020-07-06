@@ -10,7 +10,7 @@ In this article, we will define the formula for EOQ (Economic Order uantity) Mod
 
 ## EOQ Model: No Planned Shortages
 
-Given that
+Before formulating the model, we define some variables that is required. Given that
 
 - $Q$ = order quantity, in unit
 - $K$ = setup cost per batch, in \$
@@ -90,8 +90,22 @@ The value of $t^*$ answers the following question:
 
 > When to make the order?
 
-The formula of both $Q^*$ and $t^*$ enables us to calculate the optimal unit of product to order at an optimal time. However, this is only the special case where **planned shortage is not allowed**.
+The formula above enables us to calculate the optimal unit of product to order at an optimal time. However, this is only the special case where **planned shortage is not allowed**.
 
 So, what will happen if we change the assumption: to allow planned shortage?
 
 ## EOQ Model: With Planned Shortages
+
+Similar to previous section, we define some variables that is required. Given that
+
+- $Q$ = order quantity, in unit
+- $K$ = setup cost per batch, in \$
+- $c$ = unit cost, in \$ per unit
+- $h$ = holding cost, in \$ per unit per unit time
+- $d$ = ordering rate, in unit per unit time
+- $p$ = *(new)* shortage cost, in \$ per unit per unit time
+- $S$ = *(new)* inventory level (in unit) just after a batch of $Q$ units are added to inventory
+- $Q - S$ = *(new)* shortage in inventory (in unit) just before a batch of $Q$ units are added to inventory.
+
+Again, the cycle length is $\frac{Q}{d}$ unit of time. 
+The cycle length is $\frac{Q}{d}$ unit time.
