@@ -14,7 +14,7 @@ Given that
 - $h$ = holding cost, in $ per unit per unit time
 - $d$ = ordering rate, in unit per unit time
 
-The cycle length if $\frac{Q}{d} unit time.
+The cycle length if $\frac{Q}{d}$ unit time.
 
 Therefore, the production or ordering cost per cycle is $K + cQ$ in $.
 
