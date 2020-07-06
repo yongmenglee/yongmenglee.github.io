@@ -1,5 +1,5 @@
 ---
-title: Deterministic Continuous Review Inventory Model: The Formula
+title: "Deterministic Continuous Review Inventory Model: The Formula"
 tag: formula
 show_edit_on_github: false
 ---
@@ -26,7 +26,7 @@ $$
 \frac{hQ}{2} \times \frac{Q}{d} = \frac{hQ^2}{2d}
 $$
 
-Then, the total cost per cycle is, in $, $K + cQ + \frac{hQ^2}{2d}$
+Then, the total cost per cycle is, $K + cQ + \frac{hQ^2}{2d}$, in $.
 
 We denote by $T$, the total cost (in $) per unit time, as follows:
 
