@@ -51,8 +51,7 @@ $$
 Given that
 
 $$
-T = T = \left( K + cQ + \frac{hQ^2}{2d} \right) \times \frac{1}{Q/d}
-= \frac{dK}{Q} + cd + \frac{hQ}{2} \notag
+T = \frac{dK}{Q} + cd + \frac{hQ}{2} \notag
 $$
 
 we differentiate $T$ with respect to $Q$ as follows:
@@ -77,7 +76,7 @@ The value of $Q^*$ answers the following question:
 
 > How many products to produce in each batch of order?
 
-Next, we will look at the derivation of $T^*$.
+Next, we will look at the derivation of $t^*$, the optimal cycle length.
 
 ### $t^*$: The Derivation
 
