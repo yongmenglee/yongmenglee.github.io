@@ -1,5 +1,6 @@
 ---
 title: Deterministic Continuous Review Inventory Model: The Formula
+tag: formula
 show_edit_on_github: false
 ---
 
@@ -7,11 +8,11 @@ show_edit_on_github: false
 
 Given that
 
-$Q$ = order quantity, in unit
-$K$ = setup cost per batch, in $
-$c$ = unit cost, in $ per unit
-$h$ = holding cost, in $ per unit per unit time
-$d$ = ordering rate, in unit per unit time
+- $Q$ = order quantity, in unit
+- $K$ = setup cost per batch, in $
+- $c$ = unit cost, in $ per unit
+- $h$ = holding cost, in $ per unit per unit time
+- $d$ = ordering rate, in unit per unit time
 
 The cycle length if $\frac{Q}{d} unit time.
 
@@ -22,7 +23,7 @@ Assume that the average inventory level during a cycle is $\frac{Q+0}{2} = \frac
 Therefore, the holding cost per cycle is, in $,
 
 $$
-\frac{hQ}{2} \times \{Q}{d} = \frac{hQ^2}{2d}
+\frac{hQ}{2} \times \frac{Q}{d} = \frac{hQ^2}{2d}
 $$
 
 Then, the total cost per cycle is, in $, $K + cQ + \frac{hQ^2}{2d}$
