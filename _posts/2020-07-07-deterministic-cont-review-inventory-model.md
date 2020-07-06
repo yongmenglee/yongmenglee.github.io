@@ -66,9 +66,9 @@ $$
 \begin{align}
 -\frac{dK}{(Q^*)^2} + \frac{h}{2} &= 0
 \\
-(Q*)^2 &= \frac{2dK}{h} \notag
+(Q^*)^2 &= \frac{2dK}{h} \notag
 \\
-Q* &= \sqrt{\frac{2dK}{h} \notag}
+Q^* &= \sqrt{\frac{2dK}{h} \notag}
 \end{align}
 $$
 
