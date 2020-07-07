@@ -189,15 +189,15 @@ $$
 \\
 \frac{(h+p)S^{\ast}}{Q^{\ast}} &= p
 \\
-Q^{\ast} = \frac{(h+p)}{p}S^{\ast} \label{eq:eqtwo}
+Q^{\ast} &= \frac{(h+p)}{p}S^{\ast} \label{eq:eqtwo}
 \end{align}
 $$
 
-Next, we substitute $\eqref{eq:eqtwo}$ into $\eqref{eq:eqone}$
+Next, we substitute $\eqref{eq:eqtwo}$ into $\eqref{eq:eqone}$:
 
 $$
 \begin{align}
-\frac{2dK + (h+p)(S^{\ast})^2}{p} &= (Q^{\ast})^2 
+\frac{2dK + (h+p)(S^{\ast})^2}{p}
 &= \left( \frac{(h+p)}{p}S^{\ast} \right)^2
 \\
 \frac{2dK}{p} + \frac{hp+p}{p}(S^{\ast})^2
@@ -212,4 +212,54 @@ $$
 \\
 S^{\ast} &= \sqrt{\frac{2dK}{h}} \cdot \sqrt{\frac{p}{p+h}} \label{eq:eqthree}
 \end{align}
+$$
+
+Finally, we substitute $\eqref{eq:eqthree}$ into $\eqref{eq:eqtwo}$:
+
+$$
+\begin{align}
+Q^{\ast} &= \frac{(h+p)}{p} \sqrt{\frac{2dK}{h}} \cdot \sqrt{\frac{p}{p+h}}
+\\
+&= \sqrt{\frac{2dK}{h}} \cdot \sqrt{\frac{p+h}{p}}
+\end{align}
+$$
+
+In summary, the values of $Q^{\ast}$ and $S^{\ast}$ can be calculated using the formula as follows:
+
+$$
+\begin{align}
+Q^{\ast} &= \sqrt{\frac{2dK}{h}} \cdot \sqrt{\frac{p+h}{p}} \notag
+\\
+S^{\ast} &= \sqrt{\frac{2dK}{h}} \cdot \sqrt{\frac{p}{p+h}} \notag
+\end{align}
+$$
+
+We can also deduce $Q^{\ast} - S^{\ast}$ as follows:
+
+$$
+\begin{align}
+Q^{\ast} - S^{\ast}
+&= \sqrt{\frac{2dK}{h}} \cdot \sqrt{\frac{p+h}{p}}
+- \sqrt{\frac{2dK}{h}} \cdot \sqrt{\frac{p}{p+h}} \notag
+\\
+&= \sqrt{\frac{2dK}{h}} \cdot 
+\left( \sqrt{\frac{p+h}{p}} - \sqrt{\frac{p}{p+h}} \right} \notag
+\\
+&= \sqrt{\frac{2dK}{h}} \cdot 
+\left( \sqrt{\frac{(p+h)^2}{p(p+h)}} - \sqrt{\frac{p^2}{p(p+h)}} \right} \notag
+\\
+&= \sqrt{\frac{2dK}{h}} \cdot 
+\left( \frac{p+h}{\sqrt{p(p+h)}} - \frac{p}{\sqrt{p(p+h)}} \right} \notag
+\\
+&= \sqrt{\frac{2dK}{h}} \cdot \frac{h}{\sqrt{p(p+h)}} \notag
+\\
+&= \sqrt{\frac{2dK}{p}} \cdot \sqrt{\frac{h}{p(p+h)}}
+\end{align}
+$$
+
+### $t^{\ast}$: The Derivation
+
+We would also like to know when to make the order, therefore, the time $t^{\ast}$ is given by
+$$
+t^{\ast} = \frac{Q^{\ast}}{d} = \sqrt{\frac{2K}{dh}} \cdot \sqrt{\frac{p+h}{p}}
 $$
