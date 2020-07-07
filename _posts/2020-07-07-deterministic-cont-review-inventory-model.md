@@ -267,4 +267,4 @@ $$
 
 ## References
 
-1. F. S. Hillier and G. J. Lieberman, Introduction to operations research. Boston: McGraw-Hill, 2010.
+1. F. S. Hillier and G. J. Lieberman, *Introduction to operations research.* Boston: McGraw-Hill, 2010.
