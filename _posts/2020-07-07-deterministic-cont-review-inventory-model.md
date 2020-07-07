@@ -203,7 +203,7 @@ $$
 \frac{2dK}{p} + \frac{h+p}{p}(S^{\ast})^2
 &= \left( \frac{h+p}{p} \right)^2 (S^{\ast})^2 \notag
 \\
-\left[ \left( \frac{h+p}{p} \right)^2 (S^{\ast})^2 - \frac{h+p}{p} \right] (S^{\ast})^2
+\left[ \left( \frac{h+p}{p} \right)^2 - \frac{h+p}{p} \right] (S^{\ast})^2
 &= \frac{2dK}{p} \notag
 \\
 \frac{h}{p}(h+p)(S^{\ast})^2 &= 2dK \notag
