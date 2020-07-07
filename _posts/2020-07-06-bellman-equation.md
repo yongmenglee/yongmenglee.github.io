@@ -16,7 +16,7 @@ $$
 
 **How to convert state-value function into Bellman equation?**
 
-### The derivation
+## The derivation
 
 Recall that $G_t$ is the sum of future rewards, i.e.
 
@@ -89,3 +89,7 @@ v_{\pi}(s) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right]
 &= \sum_a \pi(a|s) \sum_{s'} \sum_r p(s',r|a,s) \left[ r + \gamma v_{\pi}(s') \right]
 \end{align}
 $$
+
+## References
+
+1. R. S. Sutton and A. G. Barto, *Reinforcement learning: an introduction.* Cambridge, MA: The MIT Press, 2018.
