@@ -4,7 +4,7 @@ tag: formula
 show_edit_on_github: false
 ---
 
-In this article, we will perform the derivation of several useful formula for EOQ (Economic Order uantity) Model with and without planned shortages.
+In this article, we will perform the derivation of several useful formula for EOQ (Economic Order Quantity) Model with and without planned shortages.
 
 <!--more-->
 
