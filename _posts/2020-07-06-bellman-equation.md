@@ -1,8 +1,14 @@
 ---
-title: "Bellman Equation"
+title: "Bellman's Equation"
 tag: formula
 show_edit_on_github: false
 ---
+
+In this article, we will perform the derivation of Bellman's equation for both state-value and action-value functions.
+
+<!--more-->
+
+## The Bellman's Equation State-Value Function
 
 The state-value function is defined as follows.
 
@@ -16,7 +22,7 @@ $$
 
 **How to convert state-value function into Bellman equation?**
 
-## The derivation
+### The derivation
 
 Recall that $G_t$ is the sum of future rewards, i.e.
 
