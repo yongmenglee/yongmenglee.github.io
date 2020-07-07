@@ -42,7 +42,7 @@ $$
 We denote by $Q^*$, the value of $Q$ that minimizes $T$ as follows:
 
 $$
-Q* = \sqrt{\frac{2dK}{h}}
+Q^* = \sqrt{\frac{2dK}{h}}
 $$
 
 
@@ -107,5 +107,63 @@ Similar to previous section, we define some variables that is required. Given th
 - $S$ = *(new)* inventory level (in unit) just after a batch of $Q$ units are added to inventory
 - $Q - S$ = *(new)* shortage in inventory (in unit) just before a batch of $Q$ units are added to inventory.
 
-Again, the cycle length is $\frac{Q}{d}$ unit of time. 
-The cycle length is $\frac{Q}{d}$ unit time.
+Again, the cycle length is $\frac{Q}{d}$ unit of time.
+
+Therefore, the production or ordering cost per cycle is $K + cQ$, in \$.
+
+Assume that the average inventory level during a cycle is $\frac{S+0}{2} = \frac{S}{2}$ units (we use $S$ instead of $Q$ because $S$ is the quantity of product in the inventory), and its corresponding holding cost is $\frac{hS}{2}$ in \$ per unit time.
+
+Therefore, the holding cost per cycle is, in \$,
+
+$$
+\frac{hS}{2} \times \frac{S}{d} = \frac{hS^2}{2d}
+$$
+
+Similarly, assume that the average shortage during a cycle is $\frac{Q-S}{2} $ units, and its corresponding shortage cost is $\frac{p(Q-S)}{2}$ in \$ per unit time.
+
+Therefore, the holding cost per cycle is, in \$,
+
+$$
+\frac{p(Q-S)}{2} \times \frac{Q-S}{d} = \frac{p(Q-S)^2}{2d}
+$$
+
+
+
+Then, the total cost per cycle is, $K + cQ + \frac{hQ^2}{2d}$, in \$.
+
+We denote by $T$, the total cost (in \$) per unit time, as follows:
+
+$$
+T = \left( K + cQ + \frac{hQ^2}{2d} \right) \times \frac{1}{Q/d}
+= \frac{dK}{Q} + cd + \frac{hQ}{2}
+$$
+
+We denote by $Q^*$, the value of $Q$ that minimizes $T$ as follows:
+
+$$
+Q^* = \sqrt{\frac{2dK}{h}}
+$$
+
+
+Here, the total cost per cycle is, $K + cQ + \frac{hS^2}{2d} + \frac{p(Q-S)^2}{2d}$, in \$.
+
+We denote by $T$, the total cost (in \$) per unit time, as follows:
+
+$$
+T = \left( K + cQ + \frac{hS^2}{2d} + \frac{p(Q-S)^2}{2d}$ \right) \times \frac{1}{Q/d}
+= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{p(Q-S)^2}{2Q}
+$$
+
+Rearrange $T$
+
+$$
+\begin{align}
+T &= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{p(Q-S)^2}{2Q} \notag
+\\
+&= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{pQ^2 - 2pQS + p^2}{2Q} \notag
+\\
+&= \frac{dK}{Q} + cd + \frac{(h+p)S^2}{2Q} + \frac{pQ}{2} - pS
+\end{align}
+$$
+
+### $Q^{\ast}$: The Derivation
