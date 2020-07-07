@@ -259,7 +259,7 @@ $$
 
 ### $t^{\ast}$: The Derivation
 
-We would also like to know when to make the order, therefore, the time $t^{\ast}$ is given by
+We would also like to know when to make the order, therefore, the time $t^{\ast}$, which is the optimal cycle length, is given by
 
 $$
 t^{\ast} = \frac{Q^{\ast}}{d} = \sqrt{\frac{2K}{dh}} \cdot \sqrt{\frac{p+h}{p}}
