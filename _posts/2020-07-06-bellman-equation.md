@@ -92,4 +92,4 @@ $$
 
 ## References
 
-1. R. S. Sutton and A. G. Barto, Reinforcement learning: an introduction. Cambridge, MA: The MIT Press, 2018.
+1. R. S. Sutton and A. G. Barto, *Reinforcement learning: an introduction.* Cambridge, MA: The MIT Press, 2018.
