@@ -173,7 +173,7 @@ To find $Q$ and $S$ that minimize $T$, we want to find the value of $Q^{\ast}$ a
 
 $$
 \begin{align}
--\frac{2dK + (h+p)(S^{\ast})^2}{2Q^{\ast}^2} + \frac{p}{2} &= 0
+-\frac{2dK + (h+p)(S^{\ast})^2}{2(Q^{\ast})^2} + \frac{p}{2} &= 0
 \\
 \frac{2dK + (h+p)(S^{\ast})^2}{(Q^{\ast})^2} &= p
 \\
