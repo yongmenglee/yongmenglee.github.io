@@ -4,7 +4,7 @@ tag: formula
 show_edit_on_github: false
 ---
 
-In this article, we will define the formula for EOQ (Economic Order uantity) Model with and without planned shorted, and perform the derivation to the formula.
+In this article, we will perform the derivation of several useful formula for EOQ (Economic Order uantity) Model with and without planned shortages.
 
 <!--more-->
 

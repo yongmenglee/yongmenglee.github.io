@@ -1,4 +1,6 @@
 ---
+title: "Bellman Equation"
+tag: formula
 show_edit_on_github: false
 ---
 
