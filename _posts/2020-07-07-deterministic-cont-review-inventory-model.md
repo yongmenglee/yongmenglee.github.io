@@ -39,14 +39,14 @@ T = \left( K + cQ + \frac{hQ^2}{2d} \right) \times \frac{1}{Q/d}
 = \frac{dK}{Q} + cd + \frac{hQ}{2}
 $$
 
-We denote by $Q^*$, the value of $Q$ that minimizes $T$ as follows:
+We denote by $Q^{\ast}$, the value of $Q$ that minimizes $T$ as follows:
 
 $$
-Q^* = \sqrt{\frac{2dK}{h}}
+Q^{\ast} = \sqrt{\frac{2dK}{h}}
 $$
 
 
-### $Q^*$: The Derivation
+### $Q^{\ast}$: The Derivation
 
 Given that
 
@@ -60,37 +60,37 @@ $$
 \frac{dT}{dQ} = -\frac{dK}{Q^2} + \frac{h}{2}
 $$
 
-To find $Q$ that minimizes $T$, we want to find the value of $Q^*$ so that $\frac{dT}{dQ} = 0$. Hence,
+To find $Q$ that minimizes $T$, we want to find the value of $Q^{\ast}$ so that $\frac{dT}{dQ} = 0$. Hence,
 
 $$
 \begin{align}
--\frac{dK}{(Q^*)^2} + \frac{h}{2} &= 0
+-\frac{dK}{(Q^{\ast})^2} + \frac{h}{2} &= 0
 \\
-(Q^*)^2 &= \frac{2dK}{h} \notag
+(Q^{\ast})^2 &= \frac{2dK}{h} \notag
 \\
-Q^* &= \sqrt{\frac{2dK}{h} \notag}
+Q^{\ast} &= \sqrt{\frac{2dK}{h} \notag}
 \end{align}
 $$
 
-The value of $Q^*$ answers the following question:
+The value of $Q^{\ast}$ answers the following question:
 
 > How many products to produce in each batch of order?
 
-Next, we will look at the derivation of $t^*$, the optimal cycle length.
+Next, we will look at the derivation of $t^{\ast}$, the optimal cycle length.
 
-### $t^*$: The Derivation
+### $t^{\ast}$: The Derivation
 
 From earlier section, we know that the cycle length is $t = \frac{Q}{d}$, therefore
 
 $$
-t^* = \frac{Q^*}{d} = \sqrt{\frac{2K}{dh}}
+t^{\ast} = \frac{Q^{\ast}}{d} = \sqrt{\frac{2K}{dh}}
 $$
 
-The value of $t^*$ answers the following question:
+The value of $t^{\ast}$ answers the following question:
 
 > When to make the order?
 
-The formula above enables us to calculate the optimal unit of product to order at an optimal time. However, this is only the special case where **planned shortage is not allowed**.
+The formula for $Q^{\ast}$ and $t^{\ast}$ above enables us to calculate the optimal unit of product to order at an optimal time. However, this is only the special case where **planned shortage is not allowed**.
 
 So, what will happen if we change the assumption: to allow planned shortage?
 
@@ -127,24 +127,6 @@ $$
 \frac{p(Q-S)}{2} \times \frac{Q-S}{d} = \frac{p(Q-S)^2}{2d}
 $$
 
-
-
-Then, the total cost per cycle is, $K + cQ + \frac{hQ^2}{2d}$, in \$.
-
-We denote by $T$, the total cost (in \$) per unit time, as follows:
-
-$$
-T = \left( K + cQ + \frac{hQ^2}{2d} \right) \times \frac{1}{Q/d}
-= \frac{dK}{Q} + cd + \frac{hQ}{2}
-$$
-
-We denote by $Q^*$, the value of $Q$ that minimizes $T$ as follows:
-
-$$
-Q^* = \sqrt{\frac{2dK}{h}}
-$$
-
-
 Here, the total cost per cycle is, $K + cQ + \frac{hS^2}{2d} + \frac{p(Q-S)^2}{2d}$, in \$.
 
 We denote by $T$, the total cost (in \$) per unit time, as follows:
@@ -166,4 +148,4 @@ T &= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{p(Q-S)^2}{2Q} \notag
 \end{align}
 $$
 
-### $Q^{\ast}$: The Derivation
+### $Q^{\ast}$ and $S^{\ast}$: The Derivation
