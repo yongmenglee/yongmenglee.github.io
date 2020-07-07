@@ -121,7 +121,7 @@ $$
 
 Similarly, assume that the average shortage during a cycle is $\frac{Q-S}{2} $ units, and its corresponding shortage cost is $\frac{p(Q-S)}{2}$ in \$ per unit time.
 
-Therefore, the holding cost per cycle is, in \$,
+Therefore, the shortage cost per cycle is, in \$,
 
 $$
 \frac{p(Q-S)}{2} \times \frac{Q-S}{d} = \frac{p(Q-S)^2}{2d}
@@ -135,7 +135,7 @@ $$
 \begin{align}
 T &= \left( K + cQ + \frac{hS^2}{2d} + \frac{p(Q-S)^2}{2d} \right) \times \frac{1}{Q/d} \notag
 \\
-T &= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{p(Q-S)^2}{2Q} \notag
+&= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{p(Q-S)^2}{2Q} \notag
 \\
 &= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{pQ^2 - 2pQS + p^2}{2Q} \notag
 \\
