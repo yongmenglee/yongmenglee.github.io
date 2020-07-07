@@ -243,13 +243,13 @@ Q^{\ast} - S^{\ast}
 - \sqrt{\frac{2dK}{h}} \cdot \sqrt{\frac{p}{p+h}} \notag
 \\
 &= \sqrt{\frac{2dK}{h}} \cdot 
-\left( \sqrt{\frac{p+h}{p}} - \sqrt{\frac{p}{p+h}} \right} \notag
+\left( \sqrt{\frac{p+h}{p}} - \sqrt{\frac{p}{p+h}} \right) \notag
 \\
 &= \sqrt{\frac{2dK}{h}} \cdot 
-\left( \sqrt{\frac{(p+h)^2}{p(p+h)}} - \sqrt{\frac{p^2}{p(p+h)}} \right} \notag
+\left( \sqrt{\frac{(p+h)^2}{p(p+h)}} - \sqrt{\frac{p^2}{p(p+h)}} \right) \notag
 \\
 &= \sqrt{\frac{2dK}{h}} \cdot 
-\left( \frac{p+h}{\sqrt{p(p+h)}} - \frac{p}{\sqrt{p(p+h)}} \right} \notag
+\left( \frac{p+h}{\sqrt{p(p+h)}} - \frac{p}{\sqrt{p(p+h)}} \right) \notag
 \\
 &= \sqrt{\frac{2dK}{h}} \cdot \frac{h}{\sqrt{p(p+h)}} \notag
 \\
@@ -260,6 +260,7 @@ $$
 ### $t^{\ast}$: The Derivation
 
 We would also like to know when to make the order, therefore, the time $t^{\ast}$ is given by
+
 $$
 t^{\ast} = \frac{Q^{\ast}}{d} = \sqrt{\frac{2K}{dh}} \cdot \sqrt{\frac{p+h}{p}}
 $$
