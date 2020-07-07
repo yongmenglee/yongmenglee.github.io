@@ -132,8 +132,11 @@ Here, the total cost per cycle is, $K + cQ + \frac{hS^2}{2d} + \frac{p(Q-S)^2}{2
 We denote by $T$, the total cost (in \$) per unit time, as follows:
 
 $$
-T = \left( K + cQ + \frac{hS^2}{2d} + \frac{p(Q-S)^2}{2d}$ \right) \times \frac{1}{Q/d}
-= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{p(Q-S)^2}{2Q}
+\begin{align}
+T &= \left( K + cQ + \frac{hS^2}{2d} + \frac{p(Q-S)^2}{2d} \right) \times \frac{1}{Q/d} \notag
+\\
+T &= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{p(Q-S)^2}{2Q}
+\end{align}
 $$
 
 Rearrange $T$
