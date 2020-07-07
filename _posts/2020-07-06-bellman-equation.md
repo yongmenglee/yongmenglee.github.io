@@ -8,7 +8,7 @@ In this article, we will perform the derivation of Bellman's equation for both s
 
 <!--more-->
 
-## The Bellman's Equation State-Value Function
+## The State-Value Function
 
 The state-value function is defined as follows.
 
@@ -22,7 +22,7 @@ $$
 
 **How to convert state-value function into Bellman equation?**
 
-### The derivation
+### The Derivation
 
 Recall that $G_t$ is the sum of future rewards, i.e.
 
