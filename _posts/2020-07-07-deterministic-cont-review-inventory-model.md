@@ -175,7 +175,7 @@ $$
 \begin{align}
 -\frac{2dK + (h+p)(S^{\ast})^2}{2(Q^{\ast})^2} + \frac{p}{2} &= 0
 \\
-\frac{2dK + (h+p)(S^{\ast})^2}{(Q^{\ast})^2} &= p \nolabel
+\frac{2dK + (h+p)(S^{\ast})^2}{(Q^{\ast})^2} &= p \notag
 \\
 \frac{2dK + (h+p)(S^{\ast})^2}{p} &= (Q^{\ast})^2 \label{eq:eqone}
 \end{align}
@@ -187,7 +187,7 @@ $$
 \begin{align}
 -p + \frac{(h+p)S^{\ast}}{Q^{\ast}} &= 0
 \\
-\frac{(h+p)S^{\ast}}{Q^{\ast}} &= p \nolabel
+\frac{(h+p)S^{\ast}}{Q^{\ast}} &= p \notag
 \\
 Q^{\ast} &= \frac{(h+p)}{p}S^{\ast} \label{eq:eqtwo}
 \end{align}
@@ -198,17 +198,17 @@ Next, we substitute $\eqref{eq:eqtwo}$ into $\eqref{eq:eqone}$:
 $$
 \begin{align}
 \frac{2dK + (h+p)(S^{\ast})^2}{p}
-&= \left( \frac{(h+p)}{p}S^{\ast} \right)^2 \nolabel
+&= \left( \frac{(h+p)}{p}S^{\ast} \right)^2 \notag
 \\
 \frac{2dK}{p} + \frac{hp+p}{p}(S^{\ast})^2
-&= \left( \frac{(h+p)}{p} \right)^2 (S^{\ast})^2 \nolabel
+&= \left( \frac{(h+p)}{p} \right)^2 (S^{\ast})^2 \notag
 \\
 \left[ \left( \frac{(h+p)}{p} \right)^2 (S^{\ast})^2 - (h+p) \right] (S^{\ast})^2
-&= 2dK \nolabel
+&= 2dK \notag
 \\
-\frac{h}{p}(h+p)(S^{\ast})^2 &= 2dK \nolabel
+\frac{h}{p}(h+p)(S^{\ast})^2 &= 2dK \notag
 \\
-(S^{\ast})^2 &= \frac{2dK}{h} \cdot \frac{p}{p+h} \nolabel
+(S^{\ast})^2 &= \frac{2dK}{h} \cdot \frac{p}{p+h} \notag
 \\
 S^{\ast} &= \sqrt{\frac{2dK}{h}} \cdot \sqrt{\frac{p}{p+h}} \label{eq:eqthree}
 \end{align}
@@ -218,7 +218,7 @@ Finally, we substitute $\eqref{eq:eqthree}$ into $\eqref{eq:eqtwo}$:
 
 $$
 \begin{align}
-Q^{\ast} &= \frac{(h+p)}{p} \sqrt{\frac{2dK}{h}} \cdot \sqrt{\frac{p}{p+h}} \nolabel
+Q^{\ast} &= \frac{(h+p)}{p} \sqrt{\frac{2dK}{h}} \cdot \sqrt{\frac{p}{p+h}} \notag
 \\
 &= \sqrt{\frac{2dK}{h}} \cdot \sqrt{\frac{p+h}{p}}
 \end{align}
