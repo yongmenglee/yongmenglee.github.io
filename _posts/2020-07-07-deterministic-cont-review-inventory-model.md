@@ -60,7 +60,7 @@ $$
 \frac{dT}{dQ} = -\frac{dK}{Q^2} + \frac{h}{2}
 $$
 
-To find $Q$ that minimizes $T$, we want to find the value of $Q^{\ast}$ so that $\frac{dT}{dQ} = 0$. Hence,
+To find $Q$ that minimizes $T$, we want to find the value of $Q^{\ast}$ such that $\frac{dT}{dQ} = 0$. Hence,
 
 $$
 \begin{align}
@@ -135,14 +135,6 @@ $$
 \begin{align}
 T &= \left( K + cQ + \frac{hS^2}{2d} + \frac{p(Q-S)^2}{2d} \right) \times \frac{1}{Q/d} \notag
 \\
-T &= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{p(Q-S)^2}{2Q}
-\end{align}
-$$
-
-Rearrange $T$
-
-$$
-\begin{align}
 T &= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{p(Q-S)^2}{2Q} \notag
 \\
 &= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{pQ^2 - 2pQS + p^2}{2Q} \notag
@@ -152,3 +144,51 @@ T &= \frac{dK}{Q} + cd + \frac{hS^2}{2Q} + \frac{p(Q-S)^2}{2Q} \notag
 $$
 
 ### $Q^{\ast}$ and $S^{\ast}$: The Derivation
+
+Given that
+
+$$
+T = \frac{dK}{Q} + cd + \frac{(h+p)S^2}{2Q} + \frac{pQ}{2} - pS \notag
+$$
+
+First, we differentiate $T$ with respect to $Q$:
+
+$$
+\begin{align}
+\frac{\partial{T}}{\partial{Q}} 
+&= -\frac{dK}{Q^2} - \frac{(h+p)S^2}{2Q^2} + \frac{p}{2} \notag
+\\
+&= -\frac{2dK + (h+p)S^2}{2Q^2} + \frac{p}{2}
+\end{align}
+$$
+
+Next, we differentiate $T$ with respect to $S$:
+
+$$
+\frac{\partial{T}}{\partial{S}} 
+= -p + \frac{(h+p)S}{Q}
+$$
+
+To find $Q$ and $S$ that minimize $T$, we want to find the value of $Q^{\ast}$ and $S^{\ast}$ such that $\frac{\partial{T}}{\partial{Q}} = 0$ and $\frac{\partial{T}}{\partial{S}} = 0$ respectively. Hence,
+
+$$
+\begin{align}
+-\frac{2dK + (h+p)(S^{\ast})^2}{2Q^{\ast}^2} + \frac{p}{2} &= 0
+\\
+\frac{2dK + (h+p)(S^{\ast})^2}{(Q^{\ast})^2} &= p
+\\
+\frac{2dK + (h+p)(S^{\ast})^2}{p} &= (Q^{\ast})^2
+\end{align}
+$$
+
+and
+
+$$
+\begin{align}
+-p + \frac{(h+p)S^{\ast}}{Q^{\ast}} &= 0
+\\
+\frac{(h+p)S^{\ast}}{Q^{\ast}} &= p
+\\
+Q^{\ast} = \frac{(h+p)}{p}S^{\ast}
+\end{align}
+$$
