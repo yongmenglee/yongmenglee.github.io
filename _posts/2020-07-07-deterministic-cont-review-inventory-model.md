@@ -264,3 +264,7 @@ We would also like to know when to make the order, therefore, the time $t^{\ast}
 $$
 t^{\ast} = \frac{Q^{\ast}}{d} = \sqrt{\frac{2K}{dh}} \cdot \sqrt{\frac{p+h}{p}}
 $$
+
+## References
+
+1. F. S. Hillier and G. J. Lieberman, Introduction to operations research. Boston: McGraw-Hill, 2010.
