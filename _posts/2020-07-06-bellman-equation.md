@@ -62,11 +62,13 @@ $$
 
 Notice how the action-value function for the current state and action $q_{\pi}(s, a)$ is also a recursive function, depending on the action-value function for the next state $q_{\pi}(s', a')$ on the right hand side.
 
-**How to convert state-value function into Bellman equation?**
+**Question: How to convert the value function into Bellman equation?**
+
+Before showing how to derive the Bellman Equation for the value functions, it is important to know that, the state-value function $v_{\pi}(s)$ in  can be expressed in terms of the action-value function $q_{\pi}(s,a)$, and vice versa.
 
 ## Rewrite Value Functions
 
-Before showing how to derive the Bellman Equation for the value functions, it is important to know that, the state-value function $v_{\pi}(s)$ in  can be expressed in terms of the action-value function $q_{\pi}(s,a)$, and vice versa.
+At this point, you might be wondering, why do we need to rewrite the value functions? Why do we care about all these? It might not make any sense for now, but don't worry, you will know how it can help us to derive the Bellman equation for the value functions.
 
 ### Rewrite $v_{\pi}(s)$ in Terms of $q_{\pi}(s,a)$
 
@@ -80,31 +82,11 @@ v_{\pi}(s) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right]
 \\
 &= \sum_a \pi(a|s) \mathbb{E}_{\pi} \left[ G_t | S_t = s, A_t = a \right]
 \\
-&= \sum_a \pi(a|s) q_{\pi}(s,a)
+&= \sum_a \pi(a|s) q_{\pi}(s,a) \label{eq:sv_in_av}
 \end{align}
 $$
 
 ### Rewrite $q_{\pi}(s,a)$ in Terms of $v_{\pi}(s)$
-
-Similarly, we start from $\eqref{eq:av_ori}$:
-
-$$
-\begin{align}
-q_{\pi}(s,a) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s, A_t = a \right]
-\\
-&= \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_t = s, A_t = a \right]
-\\
-&= \mathbb{E}_{\pi} \left[ \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_t = s, A_t = a \right] | R_t = r, S_{t+1} = s' \right]
-\\
-&= \sum_{s'} \sum_{r} p(s',r|s,a) \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_t = s, A_t = a, R_t = r, S_{t+1} = s' \right]
-\\
-&= \sum_{s'} \sum_{r} p(s',r|s,a) \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_{t+1} = s' \right]
-\\
-&= \sum_{s'} \sum_{r} p(s',r|s,a) \left[ r' + \gamma v_{\pi}(s') \right]
-\end{align}
-$$
-
-## Deriving Bellman Equation for Value Functions
 
 Recall that $G_t$ is the sum of future rewards, i.e.
 
@@ -119,6 +101,30 @@ G_t &= \sum_{k=0}^{\infty} \gamma^k R_{k+t+1} \notag
 $$
 
 where $\gamma$ is the discounted value and $R_t$ is the reward at time $t$.
+
+Then, we start from $\eqref{eq:av_ori}$:
+
+$$
+\begin{align}
+q_{\pi}(s,a) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s, A_t = a \right]
+\\
+&= \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_t = s, A_t = a \right]
+\\
+&= \mathbb{E}_{\pi} \left[ \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_t = s, A_t = a \right] | R_t = r, S_{t+1} = s' \right]
+\\
+&= \sum_{s'} \sum_{r} p(s',r|s,a) \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_t = s, A_t = a, R_t = r, S_{t+1} = s' \right]
+\\
+&= \sum_{s'} \sum_{r} p(s',r|s,a) \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_{t+1} = s' \right] \label{eq:av_in_sv_1}
+\\
+&= \sum_{s'} \sum_{r} p(s',r|s,a) \left[ r' + \gamma v_{\pi}(s') \right] \label{eq:av_in_sv_2}
+\end{align}
+$$
+
+Note that in $\eqref{eq:av_in_sv_1}$, both $R_{t+1}$ and $G_{t+1}$ are no longer dependent on current state $s$, current action $a$ and the immediate reward $r$. Therefore, these terms in the expection are omitted. 
+
+In the next section, you will see the power of rewriting these value functions in helping us to derive Bellman equation for these value functions.
+
+## Deriving Bellman Equation for Value Functions
 
 Therefore, 
 
