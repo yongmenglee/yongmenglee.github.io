@@ -70,7 +70,7 @@ Before showing how to derive the Bellman equation for the value functions, it is
 
 ## Rewrite Value Functions
 
-At this point, you might be wondering, why do we need to rewrite the value functions? Why do we care about all these? It might not make any sense for now, but don't worry, you will know how it can help us to derive the Bellman equation for the value functions.
+At this point, you might ask, why do we need to rewrite the value functions? Why do we care about all these? It might not make any sense for now, but don't worry, you will know how it can help us to derive the Bellman equation for the value functions.
 
 ### Rewrite $v_{\pi}(s)$ in Terms of $q_{\pi}(s,a)$
 
