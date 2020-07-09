@@ -124,7 +124,7 @@ Note that in $\eqref{eq:av_in_sv_1}$, both $R_{t+1}$ and $G_{t+1}$ are no longer
 
 In the next section, you will see the power of rewriting these value functions in helping us to derive Bellman equation for these value functions.
 
-## Deriving Bellman Equation for Value Functions
+## Deriving Bellman Equations
 
 To derive Bellman equation for state-value function, we substitute $\eqref{eq:av_in_sv_2}$ into $\eqref{eq:sv_in_av}$.
 
