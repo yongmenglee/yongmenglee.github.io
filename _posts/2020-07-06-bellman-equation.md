@@ -100,7 +100,7 @@ q_{\pi}(s,a) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s, A_t = a \right]
 \\
 &= \sum_{s'} \sum_{r} p(s',r|s,a) \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_{t+1} = s' \right]
 \\
-&= \sum_{s'} \sum_{r} p(s',r|s,a) \mathbb{E}_{\pi} \left[ r' + \gamma v_{\pi}(s') \right]
+&= \sum_{s'} \sum_{r} p(s',r|s,a) \left[ r' + \gamma v_{\pi}(s') \right]
 \end{align}
 $$
 
