@@ -10,15 +10,33 @@ In this article, we will perform the derivation of Bellman's equation for both s
 
 ## The State-Value Function
 
-The state-value function is defined as follows.
+The state-value function, denoted by $v_{\pi}(s)$ is defined as follows.
 
-$$ v_{\pi}(s) \doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right] \notag $$
+$$
+v_{\pi}(s) \doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right] \notag
+$$
+
+where
+
+- $\pi$: a given policy applied by the agent to interact with the environment,
+- $\s$: current state on the environment, and
+- $G_t$: the return, which is the sum over the future rewards defined as
+
+$$
+G_t = \sum_{k=0}^{\infty} \gamma^k \R_{t+k+1} \notag
+$$
+
+where $\gamma$ is the discount factor and $\R_t$ is the reward at time $t$.
+
+Note that $G_t$ is a random variable, therefore the value-function is defined as the expected return of the agent for a given state $s$.
 
 The Bellman equation for the state-value function is defined as follows.
 
 $$ 
 v_{\pi}(s) \doteq \sum_{a} \pi(a|s) \sum_{s'} \sum_{r} p(s', r | s, a) \left[ r + \gamma v_{\pi} (s') \right] \notag
 $$
+
+Notice how the state-value function for the current state $v_{\pi}(s)$ is a recursive function, depending on the state-value function for the next state $v_{\pi}(s')$ on the right hand side.
 
 **How to convert state-value function into Bellman equation?**
 
