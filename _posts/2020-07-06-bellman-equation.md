@@ -129,7 +129,7 @@ In the next section, you will see the power of rewriting these value functions i
 Recall $\eqref{eq:sv_in_av}$
 
 $$
-v_{\pi}(s) \doteq \sum_a \pi(a|s) q_{\pi}(s,a) \label{eq:sv_in_av} \notag
+v_{\pi}(s) \doteq \sum_a \pi(a|s) q_{\pi}(s,a) \notag
 $$
 
 and $\eqref{eq:av_in_sv_2}$
@@ -154,7 +154,7 @@ Similarly, to derive Bellman equation for action-value function, we substitute $
 
 $$
 \begin{align}
-q_{\pi}(s,a) &\doteq \sum_{s'} \sum_{r} p(s',r|s,a) \left[ r' + \gamma v_{\pi}(s') \right]
+q_{\pi}(s,a) &\doteq \sum_{s'} \sum_{r} p(s',r|s,a) \left[ r' + \gamma v_{\pi}(s') \right] \notag
 \\
 &= \sum_{s'} \sum_{r} p(s',r|s,a) \left[ r' + \gamma \sum_{a'} \pi(a'|s') q_{\pi}(s',a') \right]
 \end{align}
