@@ -10,7 +10,7 @@ In this article, we will perform the derivation of Bellman's equation for both s
 
 ## The State-Value Function
 
-The state-value function for a given policy, $\pi$, denoted by $v_{\pi}(s)$ is defined as follows.
+A state-value function describes the expected return of the agent for a given state $s$ following a given policy, $\pi$. The state-value function is denoted by $v_{\pi}(s)$ is defined as follows.
 
 $$
 v_{\pi}(s) \doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right] \notag
@@ -30,7 +30,33 @@ $$
 v_{\pi}(s) \doteq \sum_{a} \pi(a|s) \sum_{s'} \sum_{r} p(s', r | s, a) \left[ r + \gamma v_{\pi} (s') \right] \notag
 $$
 
-Notice how the state-value function for the current state $v_{\pi}(s)$ is a recursive function, depending on the state-value function for the next state $v_{\pi}(s')$ on the right hand side.
+Notice how the state-value function for the current state $v_{\pi}(s)$ can be expressed as a recursive function with respect to the state-value function for the next state $v_{\pi}(s')$.
+
+
+## The Action-Value Function
+
+An action-value function describes what happens when the agent selects the particular action $a$ during the state $s$, and then follow the policy $\pi$. The action-value function, denoted by $q_{\pi}(s, a)$ is defined as follows.
+
+$$
+q_{\pi}(s, a) \doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s , A_t = a\right] \notag
+$$
+
+where
+
+- $\pi$: a given policy applied by the agent to interact with the environment,
+- $s$: current state on the environment,
+- $a$: the selection action for current state $s$, and
+- $G_t$: the return, which is the sum over the future rewards.
+
+Similarly, the action-value function is defined as the expected return of the agent for selected action $a$ and given state $s$.
+
+The Bellman equation for the action-value function is defined as follows.
+
+$$ 
+q_{\pi}(s, a) \doteq \sum_{s'} \sum_{r} p(s', r | s, a) \left[ r + \gamma \sum_{a'} \pi(a'|s') q_{\pi} (s', a') \right] \notag
+$$
+
+Notice how the action-value function for the current state and action $q_{\pi}(s, a)$ is also a recursive function, depending on the action-value function for the next state $q_{\pi}(s', a')$ on the right hand side.
 
 **How to convert state-value function into Bellman equation?**
 
@@ -115,30 +141,6 @@ v_{\pi}(s) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right]
 $$
 
 
-## The Action-Value Function
-
-An action-value function describes what happens when the agent selects the particular action $a$, and then follow the policy $\pi$. The action-value function, denoted by $q_{\pi}(s, a)$ is defined as follows.
-
-$$
-q_{\pi}(s, a) \doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s , A_t = a\right] \notag
-$$
-
-where
-
-- $\pi$: a given policy applied by the agent to interact with the environment,
-- $s$: current state on the environment,
-- $a$: the selection action for current state $s$, and
-- $G_t$: the return, which is the sum over the future rewards.
-
-Similarly, the action-value function is defined as the expected return of the agent for selected action $a$ and given state $s$.
-
-The Bellman equation for the action-value function is defined as follows.
-
-$$ 
-q_{\pi}(s, a) \doteq \sum_{s'} \sum_{r} p(s', r | s, a) \left[ r + \gamma \sum_{a'} \pi(a'|s') q_{\pi} (s', a') \right] \notag
-$$
-
-Notice how the action-value function for the current state and action $q_{\pi}(s, a)$ is also a recursive function, depending on the action-value function for the next state $q_{\pi}(s', a')$ on the right hand side.
 
 ## References
 
