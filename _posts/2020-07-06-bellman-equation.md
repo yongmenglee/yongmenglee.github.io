@@ -60,11 +60,13 @@ $$
 q_{\pi}(s, a) \doteq \sum_{s'} \sum_{r} p(s', r | s, a) \left[ r + \gamma \sum_{a'} \pi(a'|s') q_{\pi} (s', a') \right] \label{eq:av_bellman}
 $$
 
-Notice how the action-value function for the current state and action $q_{\pi}(s, a)$ is also a recursive function, depending on the action-value function for the next state $q_{\pi}(s', a')$ on the right hand side.
+Notice how the action-value function for the current state and action $q_{\pi}(s, a)$ can also be expressed as a recursive function with respect to the action-value function for the next state $q_{\pi}(s', a')$.
 
-**Question: How to convert the value function into Bellman equation?**
+You might be wondering...
 
-Before showing how to derive the Bellman Equation for the value functions, it is important to know that, the state-value function $v_{\pi}(s)$ in  can be expressed in terms of the action-value function $q_{\pi}(s,a)$, and vice versa.
+**How to convert the value functions into Bellman equation?**
+
+Before showing how to derive the Bellman equation for the value functions, it is important to know that, the state-value function $v_{\pi}(s)$ in  can be expressed in terms of the action-value function $q_{\pi}(s,a)$, and vice versa.
 
 ## Rewrite Value Functions
 
