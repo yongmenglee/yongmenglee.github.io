@@ -64,7 +64,7 @@ Notice how the action-value function for the current state and action $q_{\pi}(s
 
 You might be wondering...
 
-**How to convert the value functions into Bellman equation?**
+***How to convert the value functions into Bellman equation?***
 
 Before showing how to derive the Bellman equation for the value functions, it is important to know that, the state-value function $v_{\pi}(s)$ in  can be expressed in terms of the action-value function $q_{\pi}(s,a)$, and vice versa.
 
