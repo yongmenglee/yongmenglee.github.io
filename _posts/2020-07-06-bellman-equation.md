@@ -150,7 +150,7 @@ $$
 
 We obtain the same equation as $\eqref{eq:sv_bellman}$, using only two lines.
 
-Similarly, to derive Bellman equation for action-value function, we substitute $\eqref{eq:sv_in_av}$ into $$\eqref{eq:av_in_sv_2}$.
+Similarly, to derive Bellman equation for action-value function, we substitute $\eqref{eq:sv_in_av}$ into $\eqref{eq:av_in_sv_2}$.
 
 $$
 \begin{align}
