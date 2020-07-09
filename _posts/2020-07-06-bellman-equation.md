@@ -126,7 +126,19 @@ In the next section, you will see the power of rewriting these value functions i
 
 ## Deriving Bellman Equations
 
-To derive Bellman equation for state-value function, we substitute $\eqref{eq:av_in_sv_2}$ into $\eqref{eq:sv_in_av}$.
+Recall $\eqref{eq:sv_in_av}$
+
+$$
+v_{\pi}(s) \doteq \sum_a \pi(a|s) q_{\pi}(s,a) \label{eq:sv_in_av} \notag
+$$
+
+and $\eqref{eq:av_in_sv_2}$
+
+$$
+q_{\pi}(s,a) \doteq \sum_{s'} \sum_{r} p(s',r|s,a) \left[ r' + \gamma v_{\pi}(s') \right] \notag
+$$
+
+from earlier sections. To derive Bellman equation for state-value function, we substitute $\eqref{eq:av_in_sv_2}$ into $\eqref{eq:sv_in_av}$.
 
 $$
 \begin{align}
@@ -138,7 +150,7 @@ $$
 
 We obtain the same equation as $\eqref{eq:sv_bellman}$, using only two lines.
 
-Similarly, to derive Bellman equation for action-value function, we substitute $\eqref{eq:sv_in_av}$ into $$eqref{eq:av_in_sv_2}$.
+Similarly, to derive Bellman equation for action-value function, we substitute $\eqref{eq:sv_in_av}$ into $$\eqref{eq:av_in_sv_2}$.
 
 $$
 \begin{align}
@@ -153,7 +165,7 @@ Note that we need to change $s$ and $a$ in $\eqref{eq:sv_in_av}$ to $s'$ and $a'
 We obtain the Bellman equation for action-value function similar to $\eqref{eq:av_bellman}$, as well.
 
 
-Now, you see how powerful is the rewritten form of value functions in helping us to derive the Bellman equations for these value functions. Interesting, no?
+Now, you see how powerful is the rewritten form of value functions in helping us to derive the Bellman equations for the respective value functions. Interesting, no?
 
 ## References
 
