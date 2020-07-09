@@ -64,9 +64,32 @@ Notice how the action-value function for the current state and action $q_{\pi}(s
 
 **How to convert state-value function into Bellman equation?**
 
-## Value Functions: Rewrite the Expressions
+## Rewrite Value Functions
 
-Before showing how to derive the Bellman Equation for the value functions, it is important to know that, the state-value function $v_{\pi}(s)$ in $\eqref{eq:sv_ori}$ can be expressed in terms of the action-value function $q_{\pi}(s,a)$ in $\eqref{eq:av_ori}$, and vice versa.
+Before showing how to derive the Bellman Equation for the value functions, it is important to know that, the state-value function $v_{\pi}(s)$ in  can be expressed in terms of the action-value function $q_{\pi}(s,a)$, and vice versa.
+
+### Rewrite $v_{\pi}(s)$ in Terms of $q_{\pi}(s,a)$
+
+We start from $\eqref{eq:sv_ori}$:
+
+$$
+\begin{align}
+v_{\pi}(s) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right] \notag
+\\
+&= \mathbb{E}_{\pi} \left[ \mathbb{E}_{\pi} \left[ G_t | S_t = s \right] | A_t = a \right] \notag
+\\
+&= \sum_a \pi(a|s) \mathbb{E}_{\pi} \left[ G_t | S_t = s, A_t = a \right] \notag
+\\
+&= \sum_a \pi(a|s) q_{\pi}(s,a)
+\end{align}
+$$
+
+
+### Rewrite $q_{\pi}(s,a)$ in Terms of $v_{\pi}(s)$
+
+Similarly, we start from $\eqref{eq:av_ori}$:
+
+
 
 ## Deriving Bellman Equation for Value Functions
 
