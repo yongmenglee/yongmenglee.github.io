@@ -74,22 +74,35 @@ We start from $\eqref{eq:sv_ori}$:
 
 $$
 \begin{align}
-v_{\pi}(s) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right] \notag
+v_{\pi}(s) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right]
 \\
-&= \mathbb{E}_{\pi} \left[ \mathbb{E}_{\pi} \left[ G_t | S_t = s \right] | A_t = a \right] \notag
+&= \mathbb{E}_{\pi} \left[ \mathbb{E}_{\pi} \left[ G_t | S_t = s \right] | A_t = a \right]
 \\
-&= \sum_a \pi(a|s) \mathbb{E}_{\pi} \left[ G_t | S_t = s, A_t = a \right] \notag
+&= \sum_a \pi(a|s) \mathbb{E}_{\pi} \left[ G_t | S_t = s, A_t = a \right]
 \\
 &= \sum_a \pi(a|s) q_{\pi}(s,a)
 \end{align}
 $$
 
-
 ### Rewrite $q_{\pi}(s,a)$ in Terms of $v_{\pi}(s)$
 
 Similarly, we start from $\eqref{eq:av_ori}$:
 
-
+$$
+\begin{align}
+q_{\pi}(s,a) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s, A_t = a \right]
+\\
+&= \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_t = s, A_t = a \right]
+\\
+&= \mathbb{E}_{\pi} \left[ \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_t = s, A_t = a \right] | R_t = r, S_{t+1} = s' \right]
+\\
+&= \sum_{s'} \sum_{r} p(s',r|s,a) \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_t = s, A_t = a, R_t = r, S_{t+1} = s' \right]
+\\
+&= \sum_{s'} \sum_{r} p(s',r|s,a) \mathbb{E}_{\pi} \left[ R_{t+1} + \gamma G_{t+1} | S_{t+1} = s' \right]
+\\
+&= \sum_{s'} \sum_{r} p(s',r|s,a) \mathbb{E}_{\pi} \left[ r' + \gamma v_{\pi}(s') \right]
+\end{align}
+$$
 
 ## Deriving Bellman Equation for Value Functions
 
