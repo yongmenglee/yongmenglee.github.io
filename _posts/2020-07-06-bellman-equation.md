@@ -135,7 +135,7 @@ Similarly, the action-value function is defined as the expected return of the ag
 The Bellman equation for the action-value function is defined as follows.
 
 $$ 
-q_{\pi}(s, a) \doteq \sum_{s'} \sum_{r} p(s', r | s, a) \left[ r + \gamma \sum_{a} \pi(a'|s') q_{\pi} (s', a') \right] \notag
+q_{\pi}(s, a) \doteq \sum_{s'} \sum_{r} p(s', r | s, a) \left[ r + \gamma \sum_{a'} \pi(a'|s') q_{\pi} (s', a') \right] \notag
 $$
 
 Notice how the action-value function for the current state and action $q_{\pi}(s, a)$ is also a recursive function, depending on the action-value function for the next state $q_{\pi}(s', a')$ on the right hand side.
