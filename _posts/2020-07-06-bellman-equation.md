@@ -19,14 +19,8 @@ $$
 where
 
 - $\pi$: a given policy applied by the agent to interact with the environment,
-- $\s$: current state on the environment, and
-- $G_t$: the return, which is the sum over the future rewards defined as
-
-$$
-G_t = \sum_{k=0}^{\infty} \gamma^k \R_{t+k+1} \notag
-$$
-
-where $\gamma$ is the discount factor and $\R_t$ is the reward at time $t$.
+- $s$: current state on the environment, and
+- $G_t$: the return, which is the sum over the future rewards.
 
 Note that $G_t$ is a random variable, therefore the value-function is defined as the expected return of the agent for a given state $s$.
 
@@ -48,7 +42,7 @@ $$
 G_t = \sum_{k=0}^{\infty} \gamma^k R_{k+t+1} \notag
 $$
 
-where $\gamma$ is the discounted value and $R_n$ is the reward at state $n$.
+where $\gamma$ is the discounted value and $R_t$ is the reward at time $t$.
 
 Therefore, 
 
