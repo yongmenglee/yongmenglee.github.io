@@ -1,10 +1,10 @@
 ---
-title: "Bellman's Equation"
+title: "Bellman Equation"
 tag: formula
 show_edit_on_github: false
 ---
 
-In this article, we will perform the derivation of Bellman's equation for both state-value and action-value functions.
+In this article, we will perform the derivation of Bellman equation for both state-value and action-value functions.
 
 <!--more-->
 
@@ -13,7 +13,7 @@ In this article, we will perform the derivation of Bellman's equation for both s
 A state-value function describes the expected return of the agent for a given state $s$ following a given policy, $\pi$. The state-value function is denoted by $v_{\pi}(s)$ is defined as follows.
 
 $$
-v_{\pi}(s) \doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right] \notag
+v_{\pi}(s) \doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right] \label{eq:sv_ori}
 $$
 
 where
@@ -24,10 +24,12 @@ where
 
 Note that $G_t$ is a random variable, therefore the state-value function is defined as the expected return of the agent for a given state $s$.
 
+### Bellman Equation: State-Value Function
+
 The Bellman equation for the state-value function is defined as follows.
 
 $$ 
-v_{\pi}(s) \doteq \sum_{a} \pi(a|s) \sum_{s'} \sum_{r} p(s', r | s, a) \left[ r + \gamma v_{\pi} (s') \right] \notag
+v_{\pi}(s) \doteq \sum_{a} \pi(a|s) \sum_{s'} \sum_{r} p(s', r | s, a) \left[ r + \gamma v_{\pi} (s') \right] \label{eq:sv_bellman}
 $$
 
 Notice how the state-value function for the current state $v_{\pi}(s)$ can be expressed as a recursive function with respect to the state-value function for the next state $v_{\pi}(s')$.
@@ -38,7 +40,7 @@ Notice how the state-value function for the current state $v_{\pi}(s)$ can be ex
 An action-value function describes what happens when the agent selects the particular action $a$ during the state $s$, and then follow the policy $\pi$. The action-value function, denoted by $q_{\pi}(s, a)$ is defined as follows.
 
 $$
-q_{\pi}(s, a) \doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s , A_t = a\right] \notag
+q_{\pi}(s, a) \doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s , A_t = a\right] \label{eq:av_ori}
 $$
 
 where
@@ -48,19 +50,25 @@ where
 - $a$: the selection action for current state $s$, and
 - $G_t$: the return, which is the sum over the future rewards.
 
+### Bellman Equation: Action-Value Function
+
 Similarly, the action-value function is defined as the expected return of the agent for selected action $a$ and given state $s$.
 
 The Bellman equation for the action-value function is defined as follows.
 
 $$ 
-q_{\pi}(s, a) \doteq \sum_{s'} \sum_{r} p(s', r | s, a) \left[ r + \gamma \sum_{a'} \pi(a'|s') q_{\pi} (s', a') \right] \notag
+q_{\pi}(s, a) \doteq \sum_{s'} \sum_{r} p(s', r | s, a) \left[ r + \gamma \sum_{a'} \pi(a'|s') q_{\pi} (s', a') \right] \label{eq:av_bellman}
 $$
 
 Notice how the action-value function for the current state and action $q_{\pi}(s, a)$ is also a recursive function, depending on the action-value function for the next state $q_{\pi}(s', a')$ on the right hand side.
 
 **How to convert state-value function into Bellman equation?**
 
-### The Derivation
+## Value Functions: Rewrite the Expressions
+
+Before showing how to derive the Bellman Equation for the value functions, it is important to know that, the state-value function $v_{\pi}(s)$ in $\eqref{eq:sv_ori}$ can be expressed in terms of the action-value function $q_{\pi}(s,a)$ in $\eqref{eq:av_ori}$, and vice versa.
+
+## Deriving Bellman Equation for Value Functions
 
 Recall that $G_t$ is the sum of future rewards, i.e.
 
