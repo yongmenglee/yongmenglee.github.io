@@ -39,7 +39,11 @@ Notice how the state-value function for the current state $v_{\pi}(s)$ is a recu
 Recall that $G_t$ is the sum of future rewards, i.e.
 
 $$
-G_t = \sum_{k=0}^{\infty} \gamma^k R_{k+t+1} \notag
+\begin{align}
+G_t &= \sum_{k=0}^{\infty} \gamma^k R_{k+t+1} \notag
+&= R_{t+1} + \gamma \sum_{k=1}^{\infty} \gamma^k R_{k+t+1} \notag
+&= R_{t+1} + \gamma G_{t+1} \notag
+\end{align}
 $$
 
 where $\gamma$ is the discounted value and $R_t$ is the reward at time $t$.
