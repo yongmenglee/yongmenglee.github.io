@@ -169,6 +169,11 @@ We obtain the Bellman equation for action-value function similar to $\eqref{eq:a
 
 Now, you see how powerful is the rewritten form of value functions in helping us to derive the Bellman equations for the respective value functions. Interesting, no?
 
+## Example
+
+
+![Image](assets/images/C1_1_3_Value_Functions_Bellman_Equation-AV_Bellman_Eq.png){:.shadow}
+
 ## References
 
 1. R. S. Sutton and A. G. Barto, *Reinforcement learning: an introduction.* Cambridge, MA: The MIT Press, 2018.
