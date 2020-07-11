@@ -169,7 +169,7 @@ We obtain the Bellman equation for action-value function similar to $\eqref{eq:a
 
 Now, you see how powerful is the rewritten form of value functions in helping us to derive the Bellman equations for the respective value functions. Interesting, no?
 
-## Example
+## Example: Grid World
 
 To show the application of Bellman equation to simplify ghe calculation of value functions, let us consider the following Grid World example.
 
