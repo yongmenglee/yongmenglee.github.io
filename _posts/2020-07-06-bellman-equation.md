@@ -182,17 +182,63 @@ More details on the Grid World example:
   - If the agent hits the wall (e.g.: moving up/right from B), the agent bounds back to the same grid, i.e., the state remains unchanged. This is also applied to other states.
 - **Reward**: When the new state is B, the reward is +5 (this includes moving up/right from B such that state remains unchanged). Otherwise, the reward is 0.
 - **Policy**: The policy is stochastic, meaning each action performed on each state is assigned a certain probability. In this case, the actions are equiprobable (each having probability of 25%).
-- **Discount factor, $\gamma$**: $\gamma = 0.7$
+- **Discount factor**： $\gamma = 0.7$
 
 After defining the problem, we need to find the value of each state, using Bellman equation defined from earlier sections.
 
 First, we define the value of state A: $v_{\pi}(A)$, as follows:
 
 $$
+v_{\pi}(A) = \sum_a \pi(a|A) \left(r + 0.7 v_{\pi}(A) \right) \label{eq:vA_pre}
+$$
+
+In this case, there is only one associated next state $s'$ and reward $r$ for each action $a$. Therefore, the double sum in $\eqref{eq:sv_bellman}$ is omitted.
+
+We expand the summation in $\eqref{eq:vA_pre}$:
+
+$$
+v_{\pi}(A)
+= 0.25 \times \left(5 + 0.7 v_{\pi}(B) \right)
++ 0.25 \times \left(0.7 v_{\pi}(C) \right)
++ 0.50 \times \left(0.7 v_{\pi}(A) \right) \label{eq:vA}
+$$
+
+Next, we define the value for the other states, namely $v_{\pi}(B)$, $v_{\pi}(C)$ and $v_{\pi}(D)$, as follows:
+
+$$
 \begin{align}
-v_{\pi}(A) \doteq 
+v_{\pi}(B)
+&= 0.25 \times \left(0.7 v_{\pi}(A) \right)
++ 0.50 \times \left(5 + 0.7 v_{\pi}(B) \right)
++ 0.25 \times \left(0.7 v_{\pi}(D) \right) \label{eq:vB}
+\\
+v_{\pi}(C)
+&= 0.25 \times \left(0.7 v_{\pi}(A) \right)
++ 0.50 \times \left(0.7 v_{\pi}(C) \right)
++ 0.25 \times \left(0.7 v_{\pi}(D) \right) \label{eq:vC}
+\\
+v_{\pi}(D)
+&= 0.25 \times \left(5 + 0.7 v_{\pi}(B) \right)
++ 0.25 \times \left(0.7 v_{\pi}(C) \right)
++ 0.50 \times \left(0.7 v_{\pi}(D) \right) \label{eq:vD}
 \end{align}
 $$
+
+Notice that the four equations of the value functions form a system of linear equations, which can be solved by using a system of equation solver. The values of each state are, respectively:
+
+$$
+\begin{align}
+v_{\pi}(A) &= 4.2
+\\
+v_{\pi}(B) &= 6.1
+\\
+v_{\pi}(C) &= 2.2
+\\
+v_{\pi}(D) &= 4.2
+\end{align}
+$$
+
+From the Grid World example, we learn that the Bellman equation can be powerful in helping us to find the values of each state in a Markov Decision Process.
 
 ## References
 
