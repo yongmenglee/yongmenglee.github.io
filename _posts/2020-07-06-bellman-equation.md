@@ -208,19 +208,19 @@ Next, we define the value for the other states, namely $v_{\pi}(B)$, $v_{\pi}(C)
 $$
 \begin{align}
 v_{\pi}(B)
-&= 0.25 \times \left(0.7 v_{\pi}(A) \right)
+&= 0.25 \times 0.7 v_{\pi}(A)
 + 0.50 \times \left(5 + 0.7 v_{\pi}(B) \right)
-+ 0.25 \times \left(0.7 v_{\pi}(D) \right) \label{eq:vB}
++ 0.25 \times 0.7 v_{\pi}(D) \label{eq:vB}
 \\
 v_{\pi}(C)
-&= 0.25 \times \left(0.7 v_{\pi}(A) \right)
-+ 0.50 \times \left(0.7 v_{\pi}(C) \right)
-+ 0.25 \times \left(0.7 v_{\pi}(D) \right) \label{eq:vC}
+&= 0.25 \times 0.7 v_{\pi}(A)
++ 0.50 \times 0.7 v_{\pi}(C)
++ 0.25 \times 0.7 v_{\pi}(D) \label{eq:vC}
 \\
 v_{\pi}(D)
 &= 0.25 \times \left(5 + 0.7 v_{\pi}(B) \right)
-+ 0.25 \times \left(0.7 v_{\pi}(C) \right)
-+ 0.50 \times \left(0.7 v_{\pi}(D) \right) \label{eq:vD}
++ 0.25 \times 0.7 v_{\pi}(C)
++ 0.50 \times 0.7 v_{\pi}(D) \label{eq:vD}
 \end{align}
 $$
 
@@ -228,13 +228,13 @@ Notice that the four equations of the value functions form a system of linear eq
 
 $$
 \begin{align}
-v_{\pi}(A) &= 4.2
+v_{\pi}(A) &= 4.2 \notag
 \\
-v_{\pi}(B) &= 6.1
+v_{\pi}(B) &= 6.1 \notag
 \\
-v_{\pi}(C) &= 2.2
+v_{\pi}(C) &= 2.2 \notag
 \\
-v_{\pi}(D) &= 4.2
+v_{\pi}(D) &= 4.2 \notag
 \end{align}
 $$
 
