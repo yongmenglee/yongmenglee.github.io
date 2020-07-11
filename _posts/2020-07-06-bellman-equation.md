@@ -226,9 +226,17 @@ $$
 
 Notice that the four equations of the value functions form a system of linear equations, which can be solved by using a system of equation solver. The values of each state are, respectively:
 
-| State, $s$ | A | B | C | D |
-|-|-|-|-|-|
-| Value, $v_{\pi}(s)$ | 4.2 | 6.1 | 2.2 | 4.2 |
+$$
+\begin{align}
+v_{\pi}(A) &= 4.2 \notag
+\\
+v_{\pi}(B) &= 6.1 \notag
+\\
+v_{\pi}(C) &= 2.2 \notag
+\\
+v_{\pi}(D) &= 4.2 \notag
+\end{align}
+$$
 
 From the Grid World example, we learn that the Bellman equation can be powerful in helping us to find the values of each state in a Markov Decision Process.
 
