@@ -172,7 +172,7 @@ Now, you see how powerful is the rewritten form of value functions in helping us
 ## Example
 
 
-![Image](assets/images/C1_1_3_Value_Functions_Bellman_Equation-AV_Bellman_Eq){:.shadow}
+![Image](../assets/images/C1_1_3_Value_Functions_Bellman_Equation-AV_Bellman_Eq){:.shadow}
 
 ## References
 
