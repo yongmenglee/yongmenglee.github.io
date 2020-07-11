@@ -192,7 +192,7 @@ $$
 v_{\pi}(A) = \sum_a \pi(a|A) \left(r + 0.7 v_{\pi}(A) \right) \label{eq:vA_pre}
 $$
 
-In this case, there is only one associated next state $s'$ and reward $r$ for each action $a$. Therefore, the double sum and the transition function $p(s', r \vert s, a) = 1$ in $\eqref{eq:sv_bellman}$ is omitted.
+In this case, there is only one associated next state $s'$ and reward $r$ for each action $a$. Therefore, the double sum and the transition function $p(s', r \vert s, a)$ in $\eqref{eq:sv_bellman}$ is omitted (because $p(s', r \vert s, a) = 1$).
 
 We expand the summation in $\eqref{eq:vA_pre}$:
 
