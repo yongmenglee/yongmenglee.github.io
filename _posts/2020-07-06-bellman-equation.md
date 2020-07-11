@@ -171,8 +171,19 @@ Now, you see how powerful is the rewritten form of value functions in helping us
 
 ## Example
 
+To show the application of Bellman equation to simplify ghe calculation of value functions, let us consider the following Grid World example.
 
 ![Image](/assets/images/C1_1_3_Value_Functions_Bellman_Equation-AV_Bellman_Eq.png)
+
+More details on the Grid World example:
+- **States**: There are possible states, namely A, B, C and D.
+- **Actions**: At each state, there are four possible actions: moving up, down, left and right.
+  - The new state depends on the action taken by the agent - for example: moving left from B brings the agent to A.
+  - If the agent hit the wall (e.g.: moving up/right from B), the agent bounds back to the same grid, i.e., the state remains unchanged.
+- **Policy**: The policy is stochastic, meaning each action performed on each state is assigned a certain probability. In this case, the actions are equiprobable (each having probability of 25%).
+- **Reward**: When the new state is B, the reward is +5 (this includes moving up/right from B such that state remains unchanged). Otherwise, the reward is 0.
+
+
 
 ## References
 
