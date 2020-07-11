@@ -198,9 +198,9 @@ We expand the summation in $\eqref{eq:vA_pre}$:
 
 $$
 v_{\pi}(A)
-= frac{1}{2} \times \left(0.7 v_{\pi}(A) \right)
-+ frac{1}{4} \times \left(5 + 0.7 v_{\pi}(B) \right)
-+ frac{1}{4} \times \left(0.7 v_{\pi}(C) \right) \label{eq:vA}
+= \frac{1}{2} \times \left(0.7 v_{\pi}(A) \right)
++ \frac{1}{4} \times \left(5 + 0.7 v_{\pi}(B) \right)
++ \frac{1}{4} \times \left(0.7 v_{\pi}(C) \right) \label{eq:vA}
 $$
 
 Next, we define the value for the other states, namely $v_{\pi}(B)$, $v_{\pi}(C)$ and $v_{\pi}(D)$, as follows:
@@ -208,19 +208,19 @@ Next, we define the value for the other states, namely $v_{\pi}(B)$, $v_{\pi}(C)
 $$
 \begin{align}
 v_{\pi}(B)
-&= frac{1}{4} \times 0.7 v_{\pi}(A)
-+ frac{1}{2} \times \left(5 + 0.7 v_{\pi}(B) \right)
-+ frac{1}{4} \times 0.7 v_{\pi}(D) \label{eq:vB}
+&= \frac{1}{4} \times 0.7 v_{\pi}(A)
++ \frac{1}{2} \times \left(5 + 0.7 v_{\pi}(B) \right)
++ \frac{1}{4} \times 0.7 v_{\pi}(D) \label{eq:vB}
 \\
 v_{\pi}(C)
-&= frac{1}{4} \times 0.7 v_{\pi}(A)
-+ frac{1}{2} \times 0.7 v_{\pi}(C)
-+ frac{1}{4} \times 0.7 v_{\pi}(D) \label{eq:vC}
+&= \frac{1}{4} \times 0.7 v_{\pi}(A)
++ \frac{1}{2} \times 0.7 v_{\pi}(C)
++ \frac{1}{4} \times 0.7 v_{\pi}(D) \label{eq:vC}
 \\
 v_{\pi}(D)
-&= frac{1}{4} \times \left(5 + 0.7 v_{\pi}(B) \right)
-+ frac{1}{4} \times 0.7 v_{\pi}(C)
-+ frac{1}{2} \times 0.7 v_{\pi}(D) \label{eq:vD}
+&= \frac{1}{4} \times \left(5 + 0.7 v_{\pi}(B) \right)
++ \frac{1}{4} \times 0.7 v_{\pi}(C)
++ \frac{1}{2} \times 0.7 v_{\pi}(D) \label{eq:vD}
 \end{align}
 $$
 
