@@ -86,41 +86,36 @@ $$
 
 Voila! We have earned another credit by obtaining another two values of $x$ that satisfies $\eqref{eq:quad_power_quad}$.
 
-To summarize, these are the solutions for now: $x = {2, 5, 6, 7}$
+To summarize, these are the solutions for now: $x = 2, 5, 6, 7$
 
 You might think...
 
 *So far, we already have all possible cases covered, don't we?*
 
-
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">Well, think again. 🙂</summary>
-## Heading
 
-1. A numbered
-2. list
-   * With some
-   * Sub bullets
+There is one more case to consider:
+
+**Case 3: $(-1)^{2c} = 1$**
+
+This completes the final piece of puzzle to our solution.
+
+The complete solution should be: $x = 2, 3, 4, 5, 6, 7$
+
+*Amazing! How is that possible?*
+
+Well, we can always plug in any value from the list to verify the solution to $\eqref{eq:quad_power_quad}$.
+
+That's all for today!
+
 </details>
-
-{::options parse_block_html="false" /}
-
-
-
-{::options parse_block_html="true" /}
-
-<details><summary markdown="span">Let's see some code!</summary>
-```python
-print('Hello World!')
-```
-Of course, it has to be Hello World, right?
-</details>
-<br/>
 
 {::options parse_block_html="false" /}
 
 
 ## References
 
-
+1. Fast and Easy Maths! "99% fail to answer this question asked in an entrance exam! See if you can!" *YouTube*, Jul. 20, 2020 \[Video file\] Available: https://www.youtube.com/watch?v=tY549tYv3yI \[Accessed: Jul. 25, 2020\].
+2. T. (https://math.stackexchange.com/users/271938/tusky), "Solution to the equation of a polynomial raised to the power of a polynomial," *Mathematics Stack Exchange* \[Online\]. Available: https://math.stackexchange.com/q/2943102 \[Accessed: Jul. 25, 2020\]. 
