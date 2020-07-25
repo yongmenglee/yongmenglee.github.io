@@ -84,7 +84,7 @@ x &= 2, 5
 \end{align}
 $$
 
-Voila! We have earned another credit by obtaining another two values of $x$ that satisfies $\eqref{quad_power_quad}$.
+Voila! We have earned another credit by obtaining another two values of $x$ that satisfies $\eqref{eq:quad_power_quad}$.
 
 To summarize, these are the solutions for now: $x = {2, 5, 6, 7}$
 
@@ -93,7 +93,7 @@ You might think...
 *So far, we already have all possible cases covered, don't we?*
 
 <details>
-  <summary>Well, think again. 🙂</summary>
+  <summary>Well, think again.</summary>
   
   ## Heading
   1. A numbered
