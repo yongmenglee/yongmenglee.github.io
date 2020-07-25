@@ -106,7 +106,7 @@ The complete solution should be: $x = 2, 3, 4, 5, 6, 7$
 
 *Amazing! But, how do we know if we are doing it all correct?*
 
-Well, we can always plug in any value from the list to verify the solution to $\eqref{eq:quad_power_quad}$.
+Well, we can always plug in any value from the list back into $\eqref{eq:quad_power_quad}$ to verify our solutions.
 
 Cheerio!
 
