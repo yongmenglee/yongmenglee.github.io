@@ -95,7 +95,7 @@ You might think...
 
 {::options parse_block_html="true" /}
 
-<details><summary>Well, think again. 🙂</summary>
+<details><summary markdown="span">Well, think again. 🙂</summary>
 ## Heading
 
 1. A numbered
