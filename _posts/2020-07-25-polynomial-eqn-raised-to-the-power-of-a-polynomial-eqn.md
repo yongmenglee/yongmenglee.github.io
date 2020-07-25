@@ -117,5 +117,5 @@ Cheerio!
 
 ## References
 
-1. Fast and Easy Maths! "99% fail to answer this question asked in an entrance exam! See if you can!" *YouTube*, Jul. 20, 2020 \[Video file\] Available: https://www.youtube.com/watch?v=tY549tYv3yI \[Accessed: Jul. 25, 2020\].
-2. T. (https://math.stackexchange.com/users/271938/tusky), "Solution to the equation of a polynomial raised to the power of a polynomial," *Mathematics Stack Exchange*. \[Online\]. Available: https://math.stackexchange.com/q/2943102 \[Accessed: Jul. 25, 2020\]. 
+1. Fast and Easy Maths! "99% fail to answer this question asked in an entrance exam! See if you can!" *YouTube*, Jul. 20, 2020. \[Video file\] Available: [https://www.youtube.com/watch?v=tY549tYv3yI](https://www.youtube.com/watch?v=tY549tYv3yI) \[Accessed: Jul. 25, 2020\].
+2. T. ([https://math.stackexchange.com/users/271938/tusky](https://math.stackexchange.com/users/271938/tusky)), "Solution to the equation of a polynomial raised to the power of a polynomial," *Mathematics Stack Exchange*. \[Online\]. Available: [https://math.stackexchange.com/q/2943102](https://math.stackexchange.com/q/2943102) \[Accessed: Jul. 25, 2020\]. 
