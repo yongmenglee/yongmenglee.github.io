@@ -68,11 +68,11 @@ You might be wondering...
 
 Before showing how to derive the Bellman equation for the value functions, it is important to know that, the state-value function $v_{\pi}(s)$ in  can be expressed in terms of the action-value function $q_{\pi}(s,a)$, and vice versa.
 
-## Rewrite Value Functions
+## Rewriting Value Functions
 
 At this point, you might ask, why do we need to rewrite the value functions? Why do we care about all these? It might not make any sense for now, but don't worry, you will know how it can help us to derive the Bellman equation for the value functions.
 
-### Rewrite $v_{\pi}(s)$ in Terms of $q_{\pi}(s,a)$
+### Rewriting $v_{\pi}(s)$ in Terms of $q_{\pi}(s,a)$
 
 We start from $\eqref{eq:sv_ori}$:
 
@@ -88,7 +88,7 @@ v_{\pi}(s) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s \right]
 \end{align}
 $$
 
-### Rewrite $q_{\pi}(s,a)$ in Terms of $v_{\pi}(s)$
+### Rewriting $q_{\pi}(s,a)$ in Terms of $v_{\pi}(s)$
 
 Recall that $G_t$ is the sum of future rewards, i.e.
 
