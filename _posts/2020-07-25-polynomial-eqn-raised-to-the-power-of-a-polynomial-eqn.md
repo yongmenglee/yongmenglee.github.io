@@ -92,6 +92,9 @@ You might think...
 
 *So far, we already have all possible cases covered, don't we?*
 
+
+{::options parse_block_html="true" /}
+
 <details>
   <summary>Well, think again. 🙂</summary>
   
@@ -101,6 +104,9 @@ You might think...
     * With some
     * Sub bullets
 </details>
+
+{::options parse_block_html="false" /}
+
 
 
 {::options parse_block_html="true" /}
