@@ -122,7 +122,7 @@ q_{\pi}(s,a) &\doteq \mathbb{E}_{\pi} \left[ G_t | S_t = s, A_t = a \right]
 \end{align}
 $$
 
-Note that in $\eqref{eq:av_in_sv_1}$, both $R_{t+1}$ and $G_{t+1}$ are no longer dependent on current state $s$, current action $a$ and the immediate reward $r$. Therefore, these terms in the expection are omitted. 
+Note that in $\eqref{eq:av_in_sv_1}$, both $R_{t+1}$ and $G_{t+1}$ are no longer dependent on current state $s$, current action $a$ and the immediate reward $r$. Therefore, these terms in the expectation are omitted. 
 
 In the next section, you will see the power of rewriting these value functions in helping us to derive Bellman equation for these value functions.
 
