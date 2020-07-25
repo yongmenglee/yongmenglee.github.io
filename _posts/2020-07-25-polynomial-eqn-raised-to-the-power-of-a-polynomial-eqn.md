@@ -104,11 +104,11 @@ This completes the final piece of puzzle to our solution.
 
 The complete solution should be: $x = 2, 3, 4, 5, 6, 7$
 
-*Amazing! How is that possible?*
+*Amazing! But, how do we know if we are doing it all correct?*
 
 Well, we can always plug in any value from the list to verify the solution to $\eqref{eq:quad_power_quad}$.
 
-That's all for today!
+Cheerio!
 
 </details>
 
@@ -118,4 +118,4 @@ That's all for today!
 ## References
 
 1. Fast and Easy Maths! "99% fail to answer this question asked in an entrance exam! See if you can!" *YouTube*, Jul. 20, 2020 \[Video file\] Available: https://www.youtube.com/watch?v=tY549tYv3yI \[Accessed: Jul. 25, 2020\].
-2. T. (https://math.stackexchange.com/users/271938/tusky), "Solution to the equation of a polynomial raised to the power of a polynomial," *Mathematics Stack Exchange* \[Online\]. Available: https://math.stackexchange.com/q/2943102 \[Accessed: Jul. 25, 2020\]. 
+2. T. (https://math.stackexchange.com/users/271938/tusky), "Solution to the equation of a polynomial raised to the power of a polynomial," *Mathematics Stack Exchange*. \[Online\]. Available: https://math.stackexchange.com/q/2943102 \[Accessed: Jul. 25, 2020\]. 
