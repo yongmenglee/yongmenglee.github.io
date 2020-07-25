@@ -95,14 +95,13 @@ You might think...
 
 {::options parse_block_html="true" /}
 
-<details>
-  <summary>Well, think again. 🙂</summary>
-  
-  ## Heading
-  1. A numbered
-  2. list
-    * With some
-    * Sub bullets
+<details><summary>Well, think again. 🙂</summary>
+## Heading
+
+1. A numbered
+2. list
+   * With some
+   * Sub bullets
 </details>
 
 {::options parse_block_html="false" /}
