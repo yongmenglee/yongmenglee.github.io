@@ -93,7 +93,7 @@ You might think...
 *So far, we already have all possible cases covered, don't we?*
 
 <details>
-  <summary>Well, think again.</summary>
+  <summary>Well, think again. 🙂</summary>
   
   ## Heading
   1. A numbered
