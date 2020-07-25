@@ -54,13 +54,13 @@ $$
 
 Good start! We have earned our credit by obtaining our first two values of $x$.
 
-**But, wait! These are only the first two values of $x$! Then, what's next?**
+**But, wait! These are only the first two values of $x$. Then, what's next?**
 
 Be patient, let's keep calm and proceed to the second case! ☕
 
 ## Case 2: $1^b = 1$
 
-Again, this should be another fundamental concept taught in high school maths class. $1$ raised to the power of any number, $b$ remains as $1$. Similarly, we can make the following substitution with the information provided:
+Again, this should be another fundamental concept taught in high school maths class: $1$ raised to the power of any number, $b$ remains as $1$. Similarly, we can make the following substitution with the information provided:
 
 $$
 \begin{align}
@@ -91,6 +91,16 @@ To summarize, these are the solutions for now: $x = {2, 5, 6, 7}$
 You might think...
 
 *So far, we already have all possible cases covered, don't we?*
+
+<details>
+  <summary>Well, think again. 🙂</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
 
 
 ## References
