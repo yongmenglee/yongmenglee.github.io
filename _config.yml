@@ -179,7 +179,7 @@ analytics:
 
 ## => Build
 ##############################
-markdown    : kramdown
+markdown    : CommonMarkGhPages # kramdown
 highlighter : rouge
 permalink   : date
 
