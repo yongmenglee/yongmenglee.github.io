@@ -174,7 +174,7 @@ $$
     {\sum_{b \in \mathcal{A}} e^{h(s, b, \mathbf{\theta})}}
 $$
 
-# The Prove
+## The Prove
 
 With all the prerequisite knowledge and definitions above, we can start off with the proving part. Recall that the equation is given as follows:
 
