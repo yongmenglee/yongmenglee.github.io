@@ -16,7 +16,7 @@ The original exercise is extracted from \[1\] as follows:
 
 $$
 \nabla \ln \pi \left(a \vert s, \mathbf{\theta} \right) =
-\mathbf{x}_h (a, s) - \sum_{b \in \mathcal{S}} \exp \left\{h(s, b, \mathbf{\theta}) \right\} \mathbf{x}_h (b, s)
+\mathbf{x}_h (a, s) - \sum_{b \in \mathcal{S}} \pi (b \vert s, \mathbf{\theta}) \mathbf{x}_h (b, s)
 $$
 
 > using the definitions and elementary calculus.
@@ -176,27 +176,7 @@ $$
 
 ## The Prove
 
-With all the prerequisite knowledge and definitions above, we can start off with the proving part. Recall that the equation is given as follows:
-
-$$
-\nabla \ln \pi \left(a \vert s, \mathbf{\theta} \right) =
-\mathbf{x}_h (a, s) - \sum_{b \in \mathcal{S}} \exp \left\{h(s, b, \mathbf{\theta}) \right\} \mathbf{x}_h (b, s)
-$$
-
-With elementary knowledge in calculus, we can rewrite the left hand side expression from the equation as follows:
-
-$$
-\nabla \ln \pi \left(a \vert s, \mathbf{\theta} \right) =
-\frac
-    {\nabla \pi \left(a \vert s, \mathbf{\theta} \right)}
-    {\pi \left(a \vert s, \mathbf{\theta} \right)}
-$$
-
-We start with the numerator: $\nabla \pi \left(a \vert s, \mathbf{\theta} \right)$.
-
-
-
-To organize the presentation of the exercise, in this section, we denote by $H(a)$ and $H(b)$, respectively
+To organize the presentation of our content, in this section, we denote by $H(a)$ and $H(b)$, respectively
 
 $$
 \begin{align}
@@ -208,7 +188,23 @@ $$
 
 for $a, b \in \mathcal{A}$.
 
-First, we denote the numerator and denominator of our Softmax policy as follows:
+With all the prerequisite knowledge and definitions above, we can start off with the proving part. Recall that the equation is given as follows:
+
+$$
+\nabla \ln \pi \left(a \vert s, \mathbf{\theta} \right) =
+\mathbf{x}_h (a, s) - \sum_{b \in \mathcal{S}} \pi (b \vert s, \mathbf{\theta}) \mathbf{x}_h (b, s)
+$$
+
+With elementary knowledge in calculus, we can rewrite the left hand side expression from the equation as follows:
+
+$$
+\nabla \ln \pi \left(a \vert s, \mathbf{\theta} \right) =
+\frac
+    {\nabla \pi \left(a \vert s, \mathbf{\theta} \right)}
+    {\pi \left(a \vert s, \mathbf{\theta} \right)}
+$$
+
+We start with the numerator: $\nabla \pi \left(a \vert s, \mathbf{\theta} \right)$. First, we denote the numerator and denominator of our Softmax policy as follows:
 
 $$
 \begin{align}
