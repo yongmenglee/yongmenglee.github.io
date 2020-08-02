@@ -5,10 +5,6 @@ show_edit_on_github: false
 article_header:
   type: cover
   image:
-    src: /assets/images/
-article_header:
-  type: cover
-  image:
     src: /assets/images/2020-07-25-header.jpg
 ---
 
