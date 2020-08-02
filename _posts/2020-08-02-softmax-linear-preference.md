@@ -47,7 +47,7 @@ $$
 \nabla \left[\frac{f(x)}{g(x)}\right] = \frac{g(x) \nabla f(x) - f(x) \nabla g(x)}{\left(g(x)\right)^2}
 $$
 
-The Quotient rule is a simple yet powerful technique to solve many problems in calculus. A simple example which applies the Quotient Rule of calculus is as follows:
+The Quotient Rule is a simple yet powerful technique to solve many problems in calculus. A simple example which applies the Quotient Rule of calculus is as follows:
 
 **Find $\nabla \left[ (x^2 + x - 6)/(x - 2) \right]$.**
 
@@ -85,7 +85,7 @@ $$
 \end{align}
 $$
 
-In fact, one can always simplify the expression $(x^2 + x - 6)/(x - 2)$ as $x-3$, therefore $\nabla (x-3) = 1$.
+In fact, one might already realize that $(x^2 + x - 6)/(x - 2) = x - 3$, therefore $\nabla (x-3) = 1$.
 
 
 ## Action Preference
