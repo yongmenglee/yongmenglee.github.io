@@ -194,24 +194,38 @@ $$
 
 We start with the numerator: $\nabla \pi \left(a \vert s, \mathbf{\theta} \right)$.
 
-First, we denote the numerator and denominator of our Soft-max policy as follows:
+
+
+To organize the presentation of the exercise, in this section, we denote by $H(a)$ and $H(b)$, respectively
 
 $$
 \begin{align}
-f(x) &= e^{h(s, a, \mathbf{\theta})}
-\\
-g(x) &= \sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})}
+H(a) &= e^{h(s, a, \mathbf{\theta})}
+\\ 
+H(b) &= e^{h(s, b, \mathbf{\theta})}
 \end{align}
 $$
 
-Since $h(s, a, \mathbf{\theta}) = \mathbf{\theta}^T \mathbf{x}_h (s, a)$, and therefore $\nabla h(s, a, \mathbf{\theta}) = \mathbf{x}_h (s, a)$.
+for $a, b \in \mathcal{A}$.
+
+First, we denote the numerator and denominator of our Softmax policy as follows:
+
+$$
+\begin{align}
+f(x) &= H(a)
+\\
+g(x) &= \sum_{b \in \mathcal{A}} H(b)
+\end{align}
+$$
+
+Since $H(a) = \mathbf{\theta}^T \mathbf{x}_h (s, a)$, we can deduce that $\nabla H(a) = \mathbf{x}_h (s, a)$.
 
 We can now define $\nabla f(x)$ and $\nabla g(x)$ respectively, as follows
 $$
 \begin{align}
-\nabla f(x) &= e^{h(s, a, \mathbf{\theta})} \mathbf{x}_h (s, a)
+\nabla f(x) &= H(a) \mathbf{x}_h (s, a)
 \\
-\nabla g(x) &= \sum_{b \in \mathcal{A}} e^{h(s, b, \mathbf{\theta})} \mathbf{x}_h (s, b)
+\nabla g(x) &= \sum_{b \in \mathcal{A}} H(b) \mathbf{x}_h (s, b)
 \end{align}
 $$
 
@@ -223,9 +237,9 @@ $$
 &= \frac{g(x) \nabla f(x) - f(x) \nabla g(x)}{\left(g(x)\right)^2}
 \\
 &= \frac
-    {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})} e^{h(s, a, \mathbf{\theta})} \mathbf{x}_h (s, a)
-        - e^{h(s, a, \mathbf{\theta})} \sum_{b \in \mathcal{A}} e^{h(s, b, \mathbf{\theta})} \mathbf{x}_h (s, b)}
-    {\left[ \sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})} \right]^2}
+    {\sum_{b \in \mathcal{A}} H(b) H(a) \mathbf{x}_h (s, a)
+        - H(a) \sum_{b \in \mathcal{A}} H(b) \mathbf{x}_h (s, b)}
+    {\left[ \sum_{b \in \mathcal{A}} H(b) \right]^2}
 \end{align}
 $$
 
@@ -234,41 +248,31 @@ $$
 \begin{align}
 \nabla \ln \pi \left(a \vert s, \mathbf{\theta} \right)
 &= \frac
-    {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})} e^{h(s, a, \mathbf{\theta})} \mathbf{x}_h (s, a)
-        - e^{h(s, a, \mathbf{\theta})} \sum_{b \in \mathcal{A}} e^{h(s, b, \mathbf{\theta})} \mathbf{x}_h (s, b)}
-    {\left[ \sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})} \right]^2}
+    {\sum_{b \in \mathcal{A}} H(b) H(a) \mathbf{x}_h (s, a)
+        - H(a) \sum_{b \in \mathcal{A}} H(b) \mathbf{x}_h (s, b)}
+    {\left[ \sum_{b \in \mathcal{A}} H(b) \right]^2}
     \times
-    \frac
-        {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})} }
-        {e^{h(s, a, \mathbf{\theta})}}
+    \frac{\sum_{b \in \mathcal{A}} H(b)}{H(a)}
 \\
 &= \frac
-    {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})} \mathbf{x}_h (s, a)
-        - \sum_{b \in \mathcal{A}} e^{h(s, b, \mathbf{\theta})} \mathbf{x}_h (s, b)}
+    {\sum_{b \in \mathcal{A}} H(b) \mathbf{x}_h (s, a)
+        - \sum_{b \in \mathcal{A}} H(b) \mathbf{x}_h (s, b)}
     {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})}}
-    \times
-    \frac
-    {e^{h(s, a, \mathbf{\theta})}}
-    {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})}}
-    \times
-    \frac
-        {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})} }
-        {e^{h(s, a, \mathbf{\theta})}}
+    \times \frac{H(a)}{\sum_{b \in \mathcal{A}} H(b)}
+    \times \frac{\sum_{b \in \mathcal{A}} H(b)}{H(a)}
 \\
 &= \frac
-    {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})} \mathbf{x}_h (s, a)
-        - \sum_{b \in \mathcal{A}} e^{h(s, b, \mathbf{\theta})} \mathbf{x}_h (s, b)}
-    {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})}}
+    {\sum_{b \in \mathcal{A}} H(b) \mathbf{x}_h (s, a)
+        - \sum_{b \in \mathcal{A}} H(b) \mathbf{x}_h (s, b)}
+    {\sum_{b \in \mathcal{A}} H(b)}
 \\
 &= \frac
-    {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})}}
-    {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})}}
+    {\sum_{b \in \mathcal{A}} H(b)}
+    {\sum_{b \in \mathcal{A}} H(b)}
     \mathbf{x}_h (s, a)
     -
     \sum_{b \in \mathcal{A}} 
-    \frac
-        {e^{h(s, b, \mathbf{\theta})}}
-        {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})}}
+    \frac{H(b)}{\sum_{b \in \mathcal{A}} H(b)}
     \mathbf{x}_h (s, b)
 \\
 &= \mathbf{x}_h (s, a) - \sum_{b \in \mathcal{A}} \pi (b \vert s, \mathbf{\theta}) \mathbf{x}_h (s, b)
