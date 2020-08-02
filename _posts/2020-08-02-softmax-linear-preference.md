@@ -12,6 +12,8 @@ In this article, we will do an exercise to prove the eligibility vector of a pol
 
 The original exercise is extracted from \[1\] as follows:
 
+***
+
 *In Section 13.1 we considered policy parameterizations using the soft-max in action preferences (13.2) with linear action preferences (13.3). For this parameterization, prove that the eligibility vector is*
 
 $$
@@ -20,6 +22,8 @@ $$
 $$
 
 *using the definitions and elementary calculus.*
+
+***
 
 The equations (13.2) and (13.3) are, respectively
 
