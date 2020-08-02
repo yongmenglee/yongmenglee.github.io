@@ -2,6 +2,14 @@
 title: "Solving a Polynomial Equation Raised to the Power of a Polynomial Equation?"
 tag: formula
 show_edit_on_github: false
+article_header:
+  type: cover
+  image:
+    src: /assets/images/
+article_header:
+  type: cover
+  image:
+    src: /assets/images/2020-07-25-header.jpg
 ---
 
 In this article, we will discuss about how to solve a polynomial equation. This equation is a quadratic equation raised to the power of another quadratic equation.
