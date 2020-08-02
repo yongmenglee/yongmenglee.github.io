@@ -2,6 +2,10 @@
 title: "Bellman Equation: How to Derive?"
 tag: formula
 show_edit_on_github: false
+article_header:
+  type: cover
+  image:
+    src: /docs/assets/images/2020-07-06-header.jpg
 ---
 
 In this article, we will perform the derivation of Bellman equation for both state-value and action-value functions. Then, we will go through a simple Grid World example on using Bellman equation to obtain the value of each state.
