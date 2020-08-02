@@ -12,14 +12,14 @@ In this article, we will do an exercise to prove the eligibility vector of a pol
 
 The original exercise is extracted from \[1\] as follows:
 
-> In Section 13.1 we considered policy parameterizations using the soft-max in action preferences (13.2) with linear action preferences (13.3). For this parameterization, prove that the eligibility vector is
+*In Section 13.1 we considered policy parameterizations using the soft-max in action preferences (13.2) with linear action preferences (13.3). For this parameterization, prove that the eligibility vector is*
 
 $$
 \nabla \ln \pi \left(a \vert s, \mathbf{\theta} \right) =
 \mathbf{x}_h (a, s) - \sum_{b \in \mathcal{S}} \pi (b \vert s, \mathbf{\theta}) \mathbf{x}_h (b, s)
 $$
 
-> using the definitions and elementary calculus.
+*using the definitions and elementary calculus.*
 
 The equations (13.2) and (13.3) are, respectively
 
@@ -49,7 +49,7 @@ $$
 
 The Quotient rule is a simple yet powerful technique to solve many problems in calculus. A simple example which applies the Quotient Rule of calculus is as follows:
 
-Find $\nabla \left[ (x^2 + x - 6)/(x - 2) \right]$.
+**Find $\nabla \left[ (x^2 + x - 6)/(x - 2) \right]$.**
 
 We denote by $f(x)$ and $g(x)$, the numerator and denominator respectively.
 $$
@@ -85,7 +85,7 @@ $$
 \end{align}
 $$
 
-In fact, the expression $f(x)/g(x)$ is simply $x-3$, therefore $\nabla (x-3) = 1$.
+In fact, one can always simplify the expression $(x^2 + x - 6)/(x - 2)$ as $x-3$, therefore $\nabla (x-3) = 1$.
 
 
 ## Action Preference
