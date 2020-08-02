@@ -257,7 +257,7 @@ $$
 &= \frac
     {\sum_{b \in \mathcal{A}} H(b) \mathbf{x}_h (s, a)
         - \sum_{b \in \mathcal{A}} H(b) \mathbf{x}_h (s, b)}
-    {\sum_{b \in \mathcal{A}} e^{ h(s, b, \mathbf{\theta})}}
+    {\sum_{b \in \mathcal{A}} H(b)}
     \times \frac{H(a)}{\sum_{b \in \mathcal{A}} H(b)}
     \times \frac{\sum_{b \in \mathcal{A}} H(b)}{H(a)}
 \\
