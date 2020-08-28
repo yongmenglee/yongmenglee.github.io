@@ -97,7 +97,7 @@ $$
 
 ## Fourier coefficient $a_n$
 
-To express \eqref{fourier} in terms of Fourier coefficient $a_n$, we will first multiply both sides of~\eqref{fourier} by $\cos mx$, where $m \in \mathbf{Z^+}$. Then, we integrate both sides of \eqref{fourier} to the range of $[-\pi, \pi]$, as follows:
+To express \eqref{fourier} in terms of Fourier coefficient $a_n$, we will first multiply both sides of \eqref{fourier} by $\cos mx$, where $m \in \mathbf{Z^+}$. Then, we integrate both sides of \eqref{fourier} to the range of $[-\pi, \pi]$, as follows:
 
 $$
 \begin{align}
@@ -138,18 +138,17 @@ $$
 
 ***
 
-By substituting \eqref{cosAndCos} and \eqref{sinAndCos} into the right hand side of~\eqref{fourier:a_n_1}, we have
+By substituting \eqref{cosAndCos} and \eqref{sinAndCos} into the right hand side of \eqref{fourier:a_n_1}, we have
 
 $$
 \begin{align}
-\int_{-\pi}^{\pi} f(x) \cos{mx} \mathop{dx} =& 
-\int_{-\pi}^{\pi} \frac{a_0}{2} \cos{mx} \mathop{dx} \notag 
+\int_{-\pi}^{\pi} f(x) \cos mx \mathop{dx} =& 
+\int_{-\pi}^{\pi} \frac{a_0}{2} \cos mx \mathop{dx} \notag 
 \\ &+
-\int_{-\pi}^{\pi} \frac{1}{2} \sum_{n=1}^{\infty} \bigl\{ 
-a_n \left(\cos{(m+n)x} +  \cos{(m-n)x} \right)\bigr\} \mathop{dx} \notag 
-\\ &+
-\int_{-\pi}^{\pi} \frac{1}{2} \sum_{n=1}^{\infty} \bigl\{ 
-b_n \left(\sin{(m+n)x + \sin{(m-n)x}}\right)\bigr\} \mathop{dx} \label{fourier:a_n_1}
+\int_{-\pi}^{\pi} \frac{1}{2} \Biggl\{ \sum_{n=1}^{\infty} \bigl\{ 
+a_n \left(\cos{(m+n)x} + \cos{(m-n)x} \right) \notag 
+\\ & \hspace{16mm}+
+b_n \left(\sin{(m+n)x - \sin{(m-n)x}}\right)\bigr\} \Biggr\} \mathop{dx} \label{fourier:b_n_2}
 \end{align}
 $$
 
@@ -198,7 +197,7 @@ $$
 
 given $m-n \in \mathbf{Z}$.
 
-This reduces the summation in~\eqref{fourier:a_n_1} to only terms where $m=n$, as follows:
+This reduces the summation in \eqref{fourier:a_n_1} to only terms where $m=n$, as follows:
 
 $$	
 \begin{align}
@@ -268,8 +267,8 @@ Now, substitute \eqref{cosAndSin} and \eqref{sinAndSin} into \eqref{fourier:b_n_
 
 $$
 \begin{align}
-\int_{-\pi}^{\pi} f(x) \cos mx \mathop{dx} =& 
-\int_{-\pi}^{\pi} \frac{a_0}{2} \cos mx \mathop{dx} \notag 
+\int_{-\pi}^{\pi} f(x) \sin mx \mathop{dx} =& 
+\int_{-\pi}^{\pi} \frac{a_0}{2} \sin mx \mathop{dx} \notag 
 \\ &+
 \int_{-\pi}^{\pi} \frac{1}{2} \Biggl\{ \sum_{n=1}^{\infty} \bigl\{ 
 a_n \left(\sin{(m-n)x} + \sin{(m+n)x} \right) \notag 
@@ -388,7 +387,7 @@ f(-x) &= \frac{a_0}{2} +
 \end{align}
 $$
 
-If $f(x)$ is odd, then we can find the Fourier series representation of $f(x)$ by manipulating~\eqref{fourier} and \eqref{fourier:neg} as follows:
+If $f(x)$ is odd, then we can find the Fourier series representation of $f(x)$ by manipulating \eqref{fourier} and \eqref{fourier:neg} as follows:
 
 $$
 \begin{align}
@@ -406,7 +405,7 @@ f(x) &= \frac{1}{2} \left\{f(x) - f(-x)\right\} \notag
 \end{align}
 $$
 
-Similarly, we can also find the Fourier series representation of an even function, $f(x)$ by manipulating~\eqref{fourier} and \eqref{fourier:neg} as follows:
+Similarly, we can also find the Fourier series representation of an even function, $f(x)$ by manipulating \eqref{fourier} and \eqref{fourier:neg} as follows:
 
 $$
 \begin{align}
