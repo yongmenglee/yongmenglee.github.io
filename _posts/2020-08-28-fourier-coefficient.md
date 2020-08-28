@@ -76,7 +76,7 @@ b_n \frac{-\cos nx}{n} \Big|_{-\pi}^{\pi} \right\} \label{fourier:a_0}
 \end{align}
 $$
 
-From~\eqref{fourier:a_0}, we can verify that $\frac{\sin nx}{n} \Big|_{-\pi}^{\pi} = 0$ and $\frac{-\cos nx}{n} \Big|_{-\pi}^{\pi} = 0$. Therefore,~\eqref{fourier:a_0} can be rewritten as follows:
+From~\eqref{fourier:a_0}, we can verify that $\frac{\sin nx}{n} \Big\rvert_{-\pi}^{\pi} = 0$ and $\frac{-\cos nx}{n} \Big\rvert_{-\pi}^{\pi} = 0$. Therefore,~\eqref{fourier:a_0} can be rewritten as follows:
 
 $$
 \begin{align*}
@@ -147,7 +147,7 @@ $$
 \\ &+
 \int_{-\pi}^{\pi} \frac{1}{2} \Biggl\{ \sum_{n=1}^{\infty} \bigl\{ 
 a_n \left(\cos{(m+n)x} +  \cos{(m-n)x} \right) \notag 
-\\ & \hspace{16mm}+
+\\ &\hspace{16mm}+
 b_n \left(\sin{(m+n)x + \sin{(m-n)x}}\right)\bigr\} \Biggr\} \mathop{dx} \label{fourier:a_n_1}
 \end{align}
 $$
@@ -345,7 +345,7 @@ f(-x) = f(x)
 \end{equation*}
 $$
 
-In other words, when we plot the graph of $f(x)$ against $x$ on the Cartesian plane (or $xy$-plane), the value of $f(x)$ is symmetric about the $y$-axis. Some examples of even function are $f(x) = |x|$ and $f(x) = x^2$.
+In other words, when we plot the graph of $f(x)$ against $x$ on the Cartesian plane (or $xy$-plane), the value of $f(x)$ is symmetric about the $y$-axis. Some examples of even function are $f(x) = \lvert x \rvert$ and $f(x) = x^2$.
 
 A function $f$ of variable $x$, denoted by $f(x)$, is defined as an odd function if the following condition is satisfied.
 
@@ -429,4 +429,4 @@ $$
 
 2. “Fourier Series,” *Brilliant Math & Science Wiki*. \[Online\]. Available: [https://brilliant.org/wiki/fourier-series/](https://brilliant.org/wiki/fourier-series/). \[Accessed: 28-Aug-2020\].
 
-3. Libretexts, “4.6: Fourier series for even and odd functions,” *Mathematics LibreTexts*, 14-May-2020. \[Online\]. Available: [https://math.libretexts.org/Bookshelves/Differential_Equations/Book:_Partial_Differential_Equations_(Walet)/04:_Fourier_Series/4.06:_Fourier_series_for_even_and_odd_functions.](https://math.libretexts.org/Bookshelves/Differential_Equations/Book:_Partial_Differential_Equations_(Walet)/04:_Fourier_Series/4.06:_Fourier_series_for_even_and_odd_functions.) \[Accessed: 28-Aug-2020\].
+3. Libretexts, “4.6: Fourier series for even and odd functions,” *Mathematics LibreTexts*, 14-May-2020. \[Online\]. Available: [https://math.libretexts.org/Bookshelves/Differential_Equations/Book:_Partial_Differential_Equations_(Walet)/04:_Fourier_Series/4.06:_Fourier_series_for_even_and_odd_functions](https://math.libretexts.org/Bookshelves/Differential_Equations/Book:_Partial_Differential_Equations_(Walet)/04:_Fourier_Series/4.06:_Fourier_series_for_even_and_odd_functions). \[Accessed: 28-Aug-2020\].
