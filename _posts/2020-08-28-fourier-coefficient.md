@@ -76,7 +76,29 @@ b_n \frac{-\cos nx}{n} \Big|_{-\pi}^{\pi} \right\} \label{fourier:a_0}
 \end{align}
 $$
 
-From \eqref{fourier:a_0}, we can verify that $\frac{\sin nx}{n} \Big\rvert_{-\pi}^{\pi} = 0$ and $\frac{-\cos nx}{n} \Big\rvert_{-\pi}^{\pi} = 0$. Therefore, \eqref{fourier:a_0} can be rewritten as follows:
+In fact, we can verify that the summation at the right hand side of \eqref{fourier:a_0} equals to 0 because
+
+$$
+\begin{align*}
+\frac{\sin{nx}}{n} \Big\rvert_{-\pi}^{\pi} &=
+\frac{\sin{n\pi}}{n} - \frac{\sin{n(-\pi)}}{n} 
+\\ &= 0 - 0 
+\\ &= 0
+\end{align*}
+$$
+
+and
+
+$$
+\begin{align*}
+\frac{\cos{nx}}{n} \Big\rvert_{-\pi}^{\pi} &=
+\frac{\cos{n\pi}}{n} - \frac{\cos{n(-\pi)}}{n} 
+\\ &= \frac{\cos{n\pi}}{n} - \frac{\cos{n\pi}}{n} 
+\\ &= 0
+\end{align*}
+$$
+
+Therefore, \eqref{fourier:a_0} can be rewritten as follows:
 
 $$
 \begin{align*}
