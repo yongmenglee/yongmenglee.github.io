@@ -119,7 +119,7 @@ $$
 
 ## Fourier coefficient $a_n$
 
-To express \eqref{fourier} in terms of Fourier coefficient $a_n$, we will first multiply both sides of \eqref{fourier} by $\cos mx$, where $m \in \mathbf{Z^+}$. Then, we integrate both sides of \eqref{fourier} to the range of $[-\pi, \pi]$, as follows:
+To solve $a_n$, i.e. to transform \eqref{fourier} into an expression of $a_n$ in terms of $x$, we will first multiply both sides of \eqref{fourier} by $\cos mx$, where $m \in \mathbf{Z^+}$. Then, we integrate both sides of \eqref{fourier} to the range of $[-\pi, \pi]$, as follows:
 
 $$
 \begin{align}
@@ -272,7 +272,7 @@ a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos nx \mathop{dx}
 $$	
 
 ## Fourier coefficient $b_n$
-We use the similar approach as previous section to express \eqref{fourier} in terms of Fourier coefficient $b_n$. The difference here is that, we will first multiply both sides of \eqref{fourier} by $\sin mx$ instead, where $m \in \mathbf{Z^+}$. Then, we integrate both sides of \eqref{fourier} to the range of $[-\pi, \pi]$, as follows:
+We use the similar approach as previous section to transform \eqref{fourier} into the expression of $b_n$ in terms of $x$. The difference here is that, we will first multiply both sides of \eqref{fourier} by $\sin mx$ instead, where $m \in \mathbf{Z^+}$. Then, we integrate both sides of \eqref{fourier} to the range of $[-\pi, \pi]$, as follows:
 
 $$
 \begin{align}
