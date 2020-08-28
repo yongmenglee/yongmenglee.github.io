@@ -406,7 +406,7 @@ $$
 \end{align*}
 $$
 
-In this section, the same concept is applied to find the Fourier series representation of an odd or even periodic functions. The first step is to identify the Fourier series representation of $f(-x)$.
+In this section, the same concept is applied to find the Fourier series representation of odd or even periodic functions. The first step is to identify the Fourier series representation of $f(-x)$.
 
 $$
 \begin{align}
