@@ -148,7 +148,7 @@ $$
 \int_{-\pi}^{\pi} \frac{1}{2} \Biggl\{ \sum_{n=1}^{\infty} \Bigl\{ 
 a_n \left(\cos{(m+n)x} + \cos{(m-n)x} \right) \notag 
 \\ & \hspace{16mm}+
-b_n \left(\sin{(m+n)x - \sin{(m-n)x}}\right)\Bigr\} \Biggr\} \mathop{dx} \label{fourier:b_n_2}
+b_n \left(\sin{(m+n)x - \sin{(m-n)x}}\right)\Bigr\} \Biggr\} \mathop{dx} \label{fourier:a_n_2}
 \end{align}
 $$
 
@@ -273,7 +273,7 @@ $$
 \int_{-\pi}^{\pi} \frac{1}{2} \Biggl\{ \sum_{n=1}^{\infty} \bigl\{ 
 a_n \left(\sin{(m-n)x} + \sin{(m+n)x} \right) \notag 
 \\ & \hspace{16mm}+
-b_n \left(\cos{(m-n)x - \cos{(m+n)x}}\right)\bigr\} \Biggr\} \mathop{dx} \label{fourier:b_n_2}
+b_n \left(\cos{(m-n)x - \cos{(m+n)x}}\right)\Bigr\} \Biggr\} \mathop{dx} \label{fourier:b_n_2}
 \end{align}
 $$
 
@@ -298,7 +298,7 @@ $$
 \int_{-\pi}^{\pi} f(x) \sin{mx} \mathop{dx} =& 
 \int_{-\pi}^{\pi} \frac{a_0}{2} \sin{mx} \mathop{dx} \notag 
 \\ &+
-\int_{-\pi}^{\pi} \frac{1}{2} \bigl\{ 
+\int_{-\pi}^{\pi} \frac{1}{2} \Bigl\{ 
 a_m \left(\sin{0} + \sin{2mx} \right) + b_m \left(\cos{0} - \cos{2mx}\right)\bigr\} \mathop{dx} \label{fourier:b_n_3}
 \end{align}
 $$
