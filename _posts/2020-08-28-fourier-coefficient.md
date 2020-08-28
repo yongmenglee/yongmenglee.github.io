@@ -145,10 +145,11 @@ $$
 \int_{-\pi}^{\pi} f(x) \cos mx \mathop{dx} =& 
 \int_{-\pi}^{\pi} \frac{a_0}{2} \cos mx \mathop{dx} \notag 
 \\ &+
-\int_{-\pi}^{\pi} \frac{1}{2} \Biggl\{ \sum_{n=1}^{\infty} \bigl\{ 
-a_n \left(\cos{(m+n)x} +  \cos{(m-n)x} \right) \notag 
-\\ &\hspace{16mm}+
-b_n \left(\sin{(m+n)x + \sin{(m-n)x}}\right)\bigr\} \Biggr\} \mathop{dx} \label{fourier:a_n_1}
+\int_{-\pi}^{\pi} \frac{1}{2} \sum_{n=1}^{\infty} \bigl\{ 
+a_n \left(\cos{(m+n)x} +  \cos{(m-n)x} \right)\bigr\} \mathop{dx} \notag 
+\\ &+
+\int_{-\pi}^{\pi} \frac{1}{2} \sum_{n=1}^{\infty} \bigl\{ 
+b_n \left(\sin{(m+n)x + \sin{(m-n)x}}\right)\bigr\} \mathop{dx} \label{fourier:a_n_1}
 \end{align}
 $$
 
@@ -335,7 +336,7 @@ b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin{nx} \mathop{dx}
 \end{align}
 $$
 
-## Bonus: Fourier Series for Odd and Even Functions}
+## Bonus: Fourier Series for Odd and Even Functions
 
 A function $f$ of variable $x$, denoted by $f(x)$, is defined as an even function if the following condition is satisfied.
 
@@ -429,4 +430,4 @@ $$
 
 2. “Fourier Series,” *Brilliant Math & Science Wiki*. \[Online\]. Available: [https://brilliant.org/wiki/fourier-series/](https://brilliant.org/wiki/fourier-series/). \[Accessed: 28-Aug-2020\].
 
-3. Libretexts, “4.6: Fourier series for even and odd functions,” *Mathematics LibreTexts*, 14-May-2020. \[Online\]. Available: [https://math.libretexts.org/Bookshelves/Differential_Equations/Book:_Partial_Differential_Equations_(Walet)/04:_Fourier_Series/4.06:_Fourier_series_for_even_and_odd_functions](https://math.libretexts.org/Bookshelves/Differential_Equations/Book:_Partial_Differential_Equations_(Walet)/04:_Fourier_Series/4.06:_Fourier_series_for_even_and_odd_functions). \[Accessed: 28-Aug-2020\].
+3. Libretexts, “4.6: Fourier series for even and odd functions,” *Mathematics LibreTexts*, 14-May-2020. \[Online\]. Available: [https://math.libretexts.org/Bookshelves/Differential_Equations/Book%3A_Partial_Differential_Equations_(Walet)/04%3A_Fourier_Series/4.06%3A_Fourier_series_for_even_and_odd_functions](https://math.libretexts.org/Bookshelves/Differential_Equations/Book%3A_Partial_Differential_Equations_(Walet)/04%3A_Fourier_Series/4.06%3A_Fourier_series_for_even_and_odd_functions). \[Accessed: 28-Aug-2020\].
