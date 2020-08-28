@@ -118,9 +118,13 @@ $$
 \end{align}
 $$
 
+*Need some quick refreshers on trigonometric identities? *
+
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Need some quick refreshers on trigonometric identities? Click me. 😀</summary>
+<details><summary markdown="span">Click me. 😀</summary>
+
+***
 
 Some refreshers on the trigonometric identities which are applied here:
 
@@ -137,6 +141,8 @@ $$
 \left[\sin{(a+b)} + \sin{(a-b)}\right]
 \end{align*}
 $$
+
+***
 
 </details>
 
