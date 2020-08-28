@@ -29,7 +29,7 @@ f(x) = \frac{a_0}{2} +
 \end{align*}
 $$
 
-which is indeed the same representation as~\eqref{fourier}, given the assumption $P = 2\pi$. However, note that we will be using the representation in~\eqref{fourier} for our purpose.
+which is indeed the same representation as \eqref{fourier}, given the assumption $P = 2\pi$. However, note that we will be using the representation in \eqref{fourier} for our purpose.
 
 There are other ways of representing the Fourier series of a function. For example, when we define new variables $d_n$, $\varphi_n$ and $\theta_n$ such that 
 
@@ -61,7 +61,7 @@ In the upcoming sections, we would like to solve the Fourier coefficients (namel
 
 ## Fourier coefficient $a_0$
 
-First, we integrate both sides of~\eqref{fourier} to the range of $[-\pi, \pi]$.
+First, we integrate both sides of \eqref{fourier} to the range of $[-\pi, \pi]$.
 
 $$
 \begin{align}
@@ -76,7 +76,7 @@ b_n \frac{-\cos nx}{n} \Big|_{-\pi}^{\pi} \right\} \label{fourier:a_0}
 \end{align}
 $$
 
-From~\eqref{fourier:a_0}, we can verify that $\frac{\sin nx}{n} \Big\rvert_{-\pi}^{\pi} = 0$ and $\frac{-\cos nx}{n} \Big\rvert_{-\pi}^{\pi} = 0$. Therefore,~\eqref{fourier:a_0} can be rewritten as follows:
+From \eqref{fourier:a_0}, we can verify that $\frac{\sin nx}{n} \Big\rvert_{-\pi}^{\pi} = 0$ and $\frac{-\cos nx}{n} \Big\rvert_{-\pi}^{\pi} = 0$. Therefore, \eqref{fourier:a_0} can be rewritten as follows:
 
 $$
 \begin{align*}
@@ -97,7 +97,7 @@ $$
 
 ## Fourier coefficient $a_n$
 
-To express~\eqref{fourier} in terms of Fourier coefficient $a_n$, we will first multiply both sides of~\eqref{fourier} by $\cos mx$, where $m \in \mathbf{Z^+}$. Then, we integrate both sides of~\eqref{fourier} to the range of $[-\pi, \pi]$, as follows:
+To express \eqref{fourier} in terms of Fourier coefficient $a_n$, we will first multiply both sides of~\eqref{fourier} by $\cos mx$, where $m \in \mathbf{Z^+}$. Then, we integrate both sides of \eqref{fourier} to the range of $[-\pi, \pi]$, as follows:
 
 $$
 \begin{align}
@@ -138,12 +138,12 @@ $$
 
 ***
 
-By substituting~\eqref{cosAndCos} and~\eqref{sinAndCos} into the right hand side of~\eqref{fourier:a_n_1}, we have
+By substituting \eqref{cosAndCos} and \eqref{sinAndCos} into the right hand side of~\eqref{fourier:a_n_1}, we have
 
 $$
 \begin{align}
-\int_{-\pi}^{\pi} f(x) \cos mx \mathop{dx} =& 
-\int_{-\pi}^{\pi} \frac{a_0}{2} \cos mx \mathop{dx} \notag 
+\int_{-\pi}^{\pi} f(x) \cos{mx} \mathop{dx} =& 
+\int_{-\pi}^{\pi} \frac{a_0}{2} \cos{mx} \mathop{dx} \notag 
 \\ &+
 \int_{-\pi}^{\pi} \frac{1}{2} \sum_{n=1}^{\infty} \bigl\{ 
 a_n \left(\cos{(m+n)x} +  \cos{(m-n)x} \right)\bigr\} \mathop{dx} \notag 
@@ -153,7 +153,7 @@ b_n \left(\sin{(m+n)x + \sin{(m-n)x}}\right)\bigr\} \mathop{dx} \label{fourier:a
 \end{align}
 $$
 
-First, we consider the case where $m \neq n$ for~\eqref{fourier:a_n_1}. We can verify that
+First, we consider the case where $m \neq n$ for \eqref{fourier:a_n_1}. We can verify that
 
 $$
 \begin{align*}
@@ -210,7 +210,7 @@ a_m \left(\cos{2mx} + \cos{0} \right) + b_m \left(\sin{2mx} + \sin{0}\right)\big
 \end{align}
 $$
 
-From~\eqref{fourier:a_n_2}, we can verify that
+From \eqref{fourier:a_n_2}, we can verify that
 
 $$
 \begin{align*}
@@ -224,7 +224,7 @@ $$
 \end{align*}
 $$
 
-Therefore, we can further reduce~\eqref{fourier:a_n_2} to the following:
+Therefore, we can further reduce \eqref{fourier:a_n_2} to the following:
 
 $$
 \begin{align}
@@ -234,7 +234,7 @@ a_m \pi \label{fourier:a_n_3}
 \end{align}
 $$
 
-There is still a last step before completing the expression of Fourier equation in terms of Fourier coefficient $a_n$. By rearranging the term in~\eqref{fourier:a_n_3}, and then replacing $m$ with $n$, we obtain
+There is still a last step before completing the expression of Fourier equation in terms of Fourier coefficient $a_n$. By rearranging the term in \eqref{fourier:a_n_3}, and then replacing $m$ with $n$, we obtain
 
 $$
 \begin{align}
@@ -243,7 +243,7 @@ a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos nx \mathop{dx}
 $$	
 
 ## Fourier coefficient $b_n$
-We use the similar approach as previous section to express~\eqref{fourier} in terms of Fourier coefficient $b_n$. The difference here is that, we will first multiply both sides of~\eqref{fourier} by $\sin mx$ instead, where $m \in \mathbf{Z^+}$. Then, we integrate both sides of~\eqref{fourier} to the range of $[-\pi, \pi]$, as follows:
+We use the similar approach as previous section to express \eqref{fourier} in terms of Fourier coefficient $b_n$. The difference here is that, we will first multiply both sides of \eqref{fourier} by $\sin mx$ instead, where $m \in \mathbf{Z^+}$. Then, we integrate both sides of \eqref{fourier} to the range of $[-\pi, \pi]$, as follows:
 
 $$
 \begin{align}
@@ -254,7 +254,7 @@ $$
 \end{align}
 $$
 
-The trigonometric identities used here are slightly different from~\eqref{fourier:a_n_1}, as follows:
+The trigonometric identities used here are slightly different from \eqref{fourier:a_n_1}, as follows:
 
 $$
 \begin{align}
@@ -264,7 +264,7 @@ $$
 \end{align}
 $$
 
-Now, substitute~\eqref{cosAndSin} and~\eqref{sinAndSin} into~\eqref{fourier:b_n_1}.
+Now, substitute \eqref{cosAndSin} and \eqref{sinAndSin} into \eqref{fourier:b_n_1}.
 
 $$
 \begin{align}
@@ -292,7 +292,7 @@ $$
 \end{align*}
 $$
 
-Therefore, the summation in~\eqref{fourier:b_n_2} can be reduced to only terms where $m = n$ as follows:
+Therefore, the summation in \eqref{fourier:b_n_2} can be reduced to only terms where $m = n$ as follows:
 
 $$
 \begin{align}
@@ -318,7 +318,7 @@ $$
 \end{align*}
 $$
 
-Therefore,~\eqref{fourier:b_n_3} can be further reduced to
+Therefore, \eqref{fourier:b_n_3} can be further reduced to
 
 $$
 \begin{align}
@@ -328,7 +328,7 @@ b_m \pi \label{fourier:b_n_4}
 \end{align}
 $$
 
-Finally, we rearrange the terms in~\eqref{fourier:b_n_4}, then replace $m$ with $n$ to obtain the expression of Fourier equation in terms of Fourier coefficient $b_n$.
+Finally, we rearrange the terms in \eqref{fourier:b_n_4}, then replace $m$ with $n$ to obtain the expression of Fourier equation in terms of Fourier coefficient $b_n$.
 
 $$
 \begin{align}
@@ -358,7 +358,7 @@ $$
 
 Unlike an even function, when we plot the graph of $f(x)$ against $x$ on the same plane, the value of $f(x)$ is symmetric about the line $y = -x$. Some examples are $f(x) = x^n$ where $n$ is odd.
 
-Recall that some periodic functions can be represented in a Fourier series~\eqref{fourier} as follows:
+Recall that some periodic functions can be represented in a Fourier series \eqref{fourier} as follows:
 
 $$
 \begin{equation*}
@@ -388,7 +388,7 @@ f(-x) &= \frac{a_0}{2} +
 \end{align}
 $$
 
-If $f(x)$ is odd, then we can find the Fourier series representation of $f(x)$ by manipulating~\eqref{fourier} and~\eqref{fourier:neg} as follows:
+If $f(x)$ is odd, then we can find the Fourier series representation of $f(x)$ by manipulating~\eqref{fourier} and \eqref{fourier:neg} as follows:
 
 $$
 \begin{align}
@@ -406,7 +406,7 @@ f(x) &= \frac{1}{2} \left\{f(x) - f(-x)\right\} \notag
 \end{align}
 $$
 
-Similarly, we can also find the Fourier series representation of an even function, $f(x)$ by manipulating~\eqref{fourier} and~\eqref{fourier:neg} as follows:
+Similarly, we can also find the Fourier series representation of an even function, $f(x)$ by manipulating~\eqref{fourier} and \eqref{fourier:neg} as follows:
 
 $$
 \begin{align}
