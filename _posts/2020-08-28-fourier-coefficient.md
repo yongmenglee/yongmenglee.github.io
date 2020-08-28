@@ -118,11 +118,9 @@ $$
 \end{align}
 $$
 
-*Need some quick refreshers on trigonometric identities?*
-
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Click me. 😀</summary>
+<details><summary markdown="span">*Need some quick refreshers on trigonometric identities? Click me.* 😀</summary>
 
 ***
 
