@@ -108,35 +108,39 @@ $$
 \end{align}
 $$
 
-The next part is a bit tricky. Take note that we apply trigonometric identity to convert the terms enclosed within the summation as such:
+The next part is a bit tricky. Take note that we apply trigonometric identities to convert the terms enclosed within the summation as such:
 
 $$
 \begin{align}
-\cos nx \cos mx &= \frac{1}{2} \left[\cos (n+m)x + \cos (n-m)x\right] \label{cosAndCos}
+\cos nx \cos mx &= \frac{1}{2} \left[\cos{(n+m)x} + \cos{(n-m)x}\right] \label{cosAndCos}
 \\
-\sin nx \cos mx &= \frac{1}{2} \left[\sin (n+m)x + \sin (n-m)x\right] \label{sinAndCos}
+\sin nx \cos mx &= \frac{1}{2} \left[\sin{(n+m)x} + \sin{(n-m)x}\right] \label{sinAndCos}
 \end{align}
 $$
 
-***
+{::options parse_block_html="true" /}
 
-Some refresher on the trigonometric identities which are applied here:
+<details><summary markdown="span">Need some quick refreshers on trigonometric identities? Click me. 😀</summary>
+
+Some refreshers on the trigonometric identities which are applied here:
 
 $$
 \begin{align*}
 \cos a \cos b &= \frac{1}{2} 
-\left[\cos a \cos b - \sin a \sin b + \cos a \cos b + \sin a \sin b\right]
+\left[\cos{a} \cos{b} - \sin{a} \sin{b} + \cos{a} \cos{b} + \sin{a} \sin{b}\right]
 \\ &= \frac{1}{2}
-\left[\cos (a + b) + \cos (a - b)\right]
+\left[\cos{(a+b)} + \cos (a - b)\right]
 \\
 \sin a \cos b &= \frac{1}{2} 
-\left[\sin a \cos b + \cos a \sin b + \sin a \cos b - \cos a \sin b\right]
+\left[\sin{a} \cos{b} + \cos{a} \sin{b} + \sin{a} \cos{b} - \cos{a} \sin{b}\right]
 \\ &= \frac{1}{2}
-\left[\sin (a + b) + \sin (a - b)\right]
+\left[\sin{(a+b)} + \sin{(a-b)}\right]
 \end{align*}
 $$
 
-***
+</details>
+
+{::options parse_block_html="false" /}
 
 By substituting \eqref{cosAndCos} and \eqref{sinAndCos} into the right hand side of \eqref{fourier:a_n_1}, we have
 
