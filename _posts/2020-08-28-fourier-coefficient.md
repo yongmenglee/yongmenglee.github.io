@@ -29,7 +29,7 @@ f(x) = \frac{a_0}{2} +
 \end{align*}
 $$
 
-which is indeed the same representation as \eqref{fourier}, given the assumption $P = 2\pi$. However, note that we will be using the representation in \eqref{fourier} for our purpose.
+which is indeed the same representation as \eqref{fourier}, given the assumption $P = 2\pi$. However, note that we will be using the representation in \eqref{fourier} for our purpose of solving Fourier coefficients.
 
 There are other ways of representing the Fourier series of a function. For example, when we define new variables $d_n$, $\varphi_n$ and $\theta_n$ such that 
 
