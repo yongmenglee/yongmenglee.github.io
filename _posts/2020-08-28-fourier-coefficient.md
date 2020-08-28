@@ -229,11 +229,11 @@ $$
 \begin{align}
 \int_{-\pi}^{\pi} f(x) \cos mx \mathop{dx} = 
 \frac{a_m}{2} \int_{-\pi}^{\pi} \cos{0} \mathop{dx} =
-a_m \pi \label{fourier:a_n_3}
+a_m \pi \label{fourier:a_n_4}
 \end{align}
 $$
 
-There is still a last step before completing the expression of Fourier equation in terms of Fourier coefficient $a_n$. By rearranging the term in \eqref{fourier:a_n_3}, and then replacing $m$ with $n$, we obtain
+There is still a last step before completing the expression of Fourier equation in terms of Fourier coefficient $a_n$. By rearranging the term in \eqref{fourier:a_n_4}, and then replacing $m$ with $n$, we obtain
 
 $$
 \begin{align}
