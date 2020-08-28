@@ -267,8 +267,8 @@ Now, substitute \eqref{cosAndSin} and \eqref{sinAndSin} into \eqref{fourier:b_n_
 
 $$
 \begin{align}
-\int_{-\pi}^{\pi} f(x) \sin mx \mathop{dx} =& 
-\int_{-\pi}^{\pi} \frac{a_0}{2} \sin mx \mathop{dx} \notag 
+\int_{-\pi}^{\pi} f(x) \sin{mx} \mathop{dx} =& 
+\int_{-\pi}^{\pi} \frac{a_0}{2} \sin{mx} \mathop{dx} \notag 
 \\ &+
 \int_{-\pi}^{\pi} \frac{1}{2} \Biggl\{ \sum_{n=1}^{\infty} \bigl\{ 
 a_n \left(\sin{(m-n)x} + \sin{(m+n)x} \right) \notag 
