@@ -118,7 +118,7 @@ $$
 \end{align}
 $$
 
-*Need some quick refreshers on trigonometric identities? *
+*Need some quick refreshers on trigonometric identities?*
 
 {::options parse_block_html="true" /}
 
