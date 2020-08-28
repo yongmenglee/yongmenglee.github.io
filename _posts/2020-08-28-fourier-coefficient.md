@@ -272,7 +272,7 @@ $$
 \\ &+
 \int_{-\pi}^{\pi} \frac{1}{2} \Biggl\{ \sum_{n=1}^{\infty} \bigl\{ 
 a_n \left(\cos{(m+n)x} + \cos{(m-n)x} \right) \notag 
-\\ & \hspace{16mm}+
+\\ &+
 b_n \left(\sin{(m+n)x - \sin{(m-n)x}}\right)\bigr\} \Biggr\} \mathop{dx} \label{fourier:b_n_2}
 \end{align}
 $$
