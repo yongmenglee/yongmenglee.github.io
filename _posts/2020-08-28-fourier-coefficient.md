@@ -205,11 +205,11 @@ $$
 \int_{-\pi}^{\pi} \frac{a_0}{2} \cos mx \mathop{dx} \notag 
 \\ &+
 \int_{-\pi}^{\pi} \frac{1}{2} \bigl\{ 
-a_m \left(\cos{2mx} + \cos{0} \right) + b_m \left(\sin{2mx} + \sin{0}\right)\bigr\} \mathop{dx} \label{fourier:a_n_2}
+a_m \left(\cos{2mx} + \cos{0} \right) + b_m \left(\sin{2mx} + \sin{0}\right)\bigr\} \mathop{dx} \label{fourier:a_n_3}
 \end{align}
 $$
 
-From \eqref{fourier:a_n_2}, we can verify that
+From \eqref{fourier:a_n_3}, we can verify that
 
 $$
 \begin{align*}
@@ -223,7 +223,7 @@ $$
 \end{align*}
 $$
 
-Therefore, we can further reduce \eqref{fourier:a_n_2} to the following:
+Therefore, we can further reduce \eqref{fourier:a_n_3} to the following:
 
 $$
 \begin{align}
