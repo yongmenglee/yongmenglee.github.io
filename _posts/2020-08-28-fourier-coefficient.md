@@ -37,9 +37,9 @@ $$
 \begin{align*}
 d_n = \sqrt{a_n^2 + b_n^2},
 &{}&
-tan{\varphi_n} = \frac{a_n}{b_n},
+\tan{\varphi_n} = \frac{a_n}{b_n},
 &{}&
-tan{\theta_n} = \frac{b_n}{a_n}
+\tan{\theta_n} = \frac{b_n}{a_n}
 \end{align*}
 $$
 
