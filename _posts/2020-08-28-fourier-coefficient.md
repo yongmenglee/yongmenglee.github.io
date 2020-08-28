@@ -335,7 +335,7 @@ b_m \pi \label{fourier:b_n_4}
 \end{align}
 $$
 
-Finally, we rearrange the terms in \eqref{fourier:b_n_4}, then replace $m$ with $n$ to obtain the expression of Fourier equation in terms of Fourier coefficient $b_n$.
+Finally, we rearrange the terms in \eqref{fourier:b_n_4}, then replace $m$ with $n$ to obtain the expression of Fourier coefficient, $b_n$ in terms of $x$.
 
 $$
 \begin{align}
