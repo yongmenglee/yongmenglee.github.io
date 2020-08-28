@@ -145,10 +145,10 @@ $$
 \int_{-\pi}^{\pi} f(x) \cos mx \mathop{dx} =& 
 \int_{-\pi}^{\pi} \frac{a_0}{2} \cos mx \mathop{dx} \notag 
 \\ &+
-\int_{-\pi}^{\pi} \frac{1}{2} \Biggl\{ \sum_{n=1}^{\infty} \bigl\{ 
+\int_{-\pi}^{\pi} \frac{1}{2} \Biggl\{ \sum_{n=1}^{\infty} \Bigl\{ 
 a_n \left(\cos{(m+n)x} + \cos{(m-n)x} \right) \notag 
 \\ & \hspace{16mm}+
-b_n \left(\sin{(m+n)x - \sin{(m-n)x}}\right)\bigr\} \Biggr\} \mathop{dx} \label{fourier:b_n_2}
+b_n \left(\sin{(m+n)x - \sin{(m-n)x}}\right)\Bigr\} \Biggr\} \mathop{dx} \label{fourier:b_n_2}
 \end{align}
 $$
 
